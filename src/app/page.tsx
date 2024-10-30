@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Studio from "./components/studio"
 import Services from "./components/services";
+import Parallax from "./components/parallax";
+import References from "./components/references";
 
 export default function Home() {
   return (
     <main className="bg-white">
       <header>
-        <div className="grid min-h-[82vh] w-full lg:h-[54rem] md:h-[34rem] place-items-stretch bg-[url('/header-image.jpg')] bg-center bg-cover bg-no-repeat">
+        <div className="grid min-h-[82vh] w-full lg:h-[54.5rem] md:h-[34rem] place-items-stretch bg-[url('/header-image.jpg')] bg-center bg-cover bg-no-repeat">
           <div className="absolute bottom-5 flex justify-center w-full">
             <svg width="78" height="56" viewBox="0 0 78 56" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M33 9C33 7.4087 33.6321 5.88258 34.7574 4.75736C35.8826 3.63214 37.4087 3 39 3C40.5913 3 42.1174 3.63214 43.2426 4.75736C44.3679 5.88258 45 7.4087 45 9V15C45 16.5913 44.3679 18.1174 43.2426 19.2426C42.1174 20.3679 40.5913 21 39 21C37.4087 21 35.8826 20.3679 34.7574 19.2426C33.6321 18.1174 33 16.5913 33 15V9Z" stroke="white" strokeWidth="1.5" strokeLinejoin="round"/>
@@ -18,6 +20,8 @@ export default function Home() {
       </header>
       <Studio />
       <Services />
+      <Parallax />
+      <References />
     </main>
   );
 }

@@ -17,7 +17,7 @@ const Navbar: React.FC<Props> = () => {
       <nav className="absolute w-full bg-gray-950 bg-opacity-30 backdrop-filter backdrop-blur-lg">
         <div className="mx-auto max-w-7xl py-2 px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
-            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
               <button
                 type="button"
                 onClick={toggleMobileMenu}
@@ -98,7 +98,7 @@ const Navbar: React.FC<Props> = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute inset-y-0 gap-3 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div className="absolute inset-y-0 gap-3 left-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button type="button" className="relative rounded-full bg-white p-1 text-gray-800 hover:text-gray-950 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                 <span className="sr-only">Instagram</span>
                 <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
