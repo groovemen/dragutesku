@@ -23,8 +23,8 @@ const References = (props: Props) => {
           Services
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-6">
+            <img className="w-full" src="/digital-mastering.svg" ></img>
           <div className="w-[10rem] h-[10rem] bg-black rounded-lg">
-
           </div>
           <div className="w-[10rem] h-[10rem] bg-black rounded-lg">
 
