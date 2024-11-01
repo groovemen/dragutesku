@@ -27,7 +27,7 @@ const Services = (props: Props) => {
       </div>
       <div className="bg-[url('/vinil.jpg')]">
         <div className="container w-full mx-auto py-12">
-          <div className="grid !grid-cols-2 gap-24">
+          <div className="grid md:!grid-cols-2 gap-24">
             <div className="grid grid-cols-1 md:!grid-cols-2 gap-8">
               <div className="flex items-center gap-4">
                 <div className="w-32 h-32 border border-white rounded-full p-4 flex items-center justify-center">
