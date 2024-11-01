@@ -14,7 +14,7 @@ const Navbar: React.FC<Props> = () => {
 
   return (
     <React.Fragment>
-      <nav className="absolute w-full bg-gray-950 bg-opacity-30 backdrop-filter backdrop-blur-lg">
+      <nav className="absolute w-full bg-gray-950 bg-opacity-30 backdrop-filter backdrop-blur-lg z-50">
         <div className="mx-auto max-w-7xl py-2 px-4 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -93,17 +93,17 @@ const Navbar: React.FC<Props> = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute inset-y-0 gap-3 right-10 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div className="absolute inset-y-0 gap-3 !right-10 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button
                 type="button"
-                className="relative rounded-full bg-[#2b2b2b] p-2 text-gray-800 hover:text-gray-950 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                className="relative rounded-full !bg-[#2b2b2b] p-2 text-gray-800 hover:!font-bold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
               >
                 <span className="sr-only">Instagram</span>
                 <img src="/instagram.svg" className="w-5" alt="instagram" />
               </button>
               <button
                 type="button"
-                className="relative rounded-full bg-[#2b2b2b] p-2 text-gray-800 hover:text-gray-950 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                className="relative rounded-full !bg-[#2b2b2b] p-2 text-gray-800 hover:!font-bold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
               >
                 <span className="sr-only">Whatsapp</span>
                 <img src="/whatsapp.svg" className="w-5" alt="whatsapp" />
@@ -111,7 +111,7 @@ const Navbar: React.FC<Props> = () => {
               </button>
               <button
                 type="button"
-                className="relative rounded-full bg-[#2b2b2b] p-2 text-gray-800 hover:text-gray-950 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                className="relative rounded-full !bg-[#2b2b2b] p-2 text-gray-800 hover:!font-bold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
               >
                 <span className="sr-only">Facebook</span>
                 <img src="/facebook.svg" className="w-5 h-5" alt="facebook" />
