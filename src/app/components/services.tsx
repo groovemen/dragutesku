@@ -26,31 +26,43 @@ const Services = (props: Props) => {
         </h2>
       </div>
       <div className="bg-[url('/vinil.jpg')]">
-        <div className="container w-full mx-auto p-12">
-          <div className="grid grid-cols-2 gap-24">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="container w-full mx-auto py-12">
+          <div className="grid !grid-cols-2 gap-24">
+            <div className="grid grid-cols-1 md:!grid-cols-2 gap-8">
               <div className="flex items-center gap-4">
-                <Image src="/globe.svg" width="80" height="80" alt="" />
+                <div className="w-32 h-32 border border-white rounded-full p-4 flex items-center justify-center">
+                  <Image src="/services/digital-mastering.svg" width="80" height="80" alt="" />
+                </div>
                 <h6 className="uppercase text-white font-normal">Digital Mastering</h6>
               </div>
               <div className="flex items-center gap-4">
-                <Image src="/globe.svg" width="80" height="80" alt="" />
+                <div className="w-32 h-32 border border-white rounded-full p-4 flex item-center justify-center">
+                  <Image src="/services/dj-mix.svg" width="80" height="80" alt="" />
+                </div>
                 <h6 className="uppercase text-white font-normal">DJ Mix & Podcast</h6>
               </div>
               <div className="flex items-center gap-4">
-                <Image src="/globe.svg" width="80" height="80" alt="" />
+                <div className="w-32 h-32 border border-white rounded-full p-4 flex item-center justify-center">
+                  <Image src="/services/mixdown.svg" width="80" height="80" alt="" />
+                </div>
                 <h6 className="uppercase text-white font-normal">Mixdown</h6>
               </div>
               <div className="flex items-center gap-4">
-                <Image src="/globe.svg" width="80" height="80" alt="" />
+                <div className="w-32 h-32 border border-white rounded-full p-4 flex item-center justify-center">
+                  <Image src="/services/audio-restoration.svg" width="80" height="80" alt="" />
+                </div>
                 <h6 className="uppercase text-white font-normal">Audio Restoration</h6>
               </div>
               <div className="flex items-center gap-4">
-                <Image src="/globe.svg" width="80" height="80" alt="" />
+                <div className="w-32 h-32 border border-white rounded-full p-4 flex item-center justify-center">
+                  <Image src="/services/stem-mastering.svg" width="80" height="80" alt="" />
+                </div>
                 <h6 className="uppercase text-white font-normal">Stem Mastering</h6>
               </div>
               <div className="flex items-center gap-4">
-                <Image src="/globe.svg" width="80" height="80" alt="" />
+                <div className="w-32 h-32 border border-white rounded-full p-4 flex item-center justify-center">
+                  <Image src="/services/vinyl-mastering.svg" width="80" height="80" alt="" />
+                </div>
                 <h6 className="uppercase text-white font-normal">Vinyl Mastering</h6>
               </div>
             </div>
