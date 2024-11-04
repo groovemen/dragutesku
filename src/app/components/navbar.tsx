@@ -66,26 +66,26 @@ const Navbar: React.FC<Props> = () => {
               <div className="hidden sm:ml-12 sm:block">
                 <div className="flex space-x-4">
                   <Link
-                    href="#"
+                    href="#studio"
                     className="px-3 py-2 text-base uppercase font-medium text-gray-300 hover:border-b hover:text-white hover:font-semibold transition-colors duration-200 ease-out hover:ease-in"
                     aria-current="page"
                   >
                     Studio
                   </Link>
                   <Link
-                    href="#"
+                    href="#services"
                     className="px-3 py-2 text-base uppercase font-medium text-gray-300 hover:border-b hover:text-white hover:font-semibold transition-colors duration-200 ease-out hover:ease-in"
                   >
                     Services
                   </Link>
                   <Link
-                    href="#"
+                    href="#references"
                     className="px-3 py-2 text-base uppercase font-medium text-gray-300 hover:border-b hover:text-white hover:font-semibold transition-colors duration-200 ease-out hover:ease-in"
                   >
                     References
                   </Link>
                   <Link
-                    href="#"
+                    href="#contact"
                     className="px-3 py-2 text-base uppercase font-medium text-gray-300 hover:border-b hover:text-white hover:font-semibold transition-colors duration-200 ease-out hover:ease-in"
                   >
                     Contact
@@ -125,26 +125,26 @@ const Navbar: React.FC<Props> = () => {
           <div className="sm:hidden" id="mobile-menu">
             <div className="flex items-center flex-col space-y-2 px-2 pb-3 pt-2">
               <Link
-                href="#"
+                href="#studio"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit hover:text-white hover:text-white hover:font-semibold rounded-none"
                 aria-current="page"
               >
                 Studio
               </Link>
               <Link
-                href="#"
+                href="#services"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit text-gray-300 hover:text-white hover:font-semibold rounded-none hover:text-white"
               >
                 Services
               </Link>
               <Link
-                href="#"
+                href="#references"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit text-gray-300 hover:text-white hover:font-semibold rounded-none hover:text-white"
               >
                 References
               </Link>
               <Link
-                href="#"
+                href="#contact"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit text-gray-300 hover:text-white hover:font-semibold rounded-none hover:text-white"
               >
                 Contact

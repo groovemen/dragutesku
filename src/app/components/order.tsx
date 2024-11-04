@@ -13,7 +13,7 @@ type Props = {};
 
 const Order = (props: Props) => {
   return (
-    <div className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover">
+    <div id="contact" className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover">
       <div className="container mx-auto py-12">
         <h2 className="uppercase flex text-3xl md:text-4xl text-white font-bold items-center mb-2">
           Order Information

@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { Typography } from "@material-tailwind/react";
 
 type Props = {};
 
 const Studio = (props: Props) => {
   return (
-    <div className="bg-white p-8">
+    <div id="studio" className="bg-white p-8">
       <div className="container w-full mx-auto mt-12">
         <h2 className="uppercase flex text-3xl md:text-4xl text-black font-bold items-center">
           <svg className="mr-3" width="61" height="30" viewBox="0 0 61 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,7 +16,25 @@ const Studio = (props: Props) => {
         </h2>
         <div className="mt-12">
           <div className="block md:flex">
-            <Image src="/eq.png" width="600" height="400" alt="eq image" className="rounded-xl shadow-lg max-h-[25rem]" />
+            <div className="relative">
+              <Image
+                className="opacity-40 z-10 border border-white/40 rounded-xl w-[31.25rem] h-[25rem]"
+                src="/eq.png"
+                width={500}
+                height={700}
+                alt="Mastering Room"
+              />
+              <Image
+                className="absolute left-5 top-6 opacity-100 z-40 flex items-center border border-white/60 rounded-lg h-[22rem]"
+                src="/eq.png"
+                width={460}
+                height={760}
+                alt="Mastering Room"
+              />
+              <Typography className="absolute text-white text-sm -mt-16 ml-32 uppercase z-50">
+                Flat EQ Room in the Sweet Spot
+              </Typography>
+            </div>
             <div className="md:m-auto">
               <h3 className="text-2xl uppercase text-black font-bold mt-8 sm:mt-0 mb-4">Mastering Room</h3>
               <h5 className="text-base text-black mb-2">„Front to Back & Above” Acoustic</h5>
@@ -30,7 +49,7 @@ const Studio = (props: Props) => {
             </div>
           </div>
           <div className="flex flex-col mt-24 md:flex-row md:space-x-8">
-            <div className="order-2 md:order-1 md:m-auto">
+            <div className="order-2 md:order-1 md:ml-24 md:mr-40">
               <h3 className="text-2xl uppercase text-black font-bold mt-8 sm:mt-0 mb-4">Daw System & Plugins</h3>
               <h5 className="text-base text-black mb-2">Ableton Live 11</h5>
               <h5 className="text-base text-black mb-2">Mac Studio M1 with OSX</h5>
@@ -45,14 +64,23 @@ const Studio = (props: Props) => {
               <h5 className="text-base text-black mb-2">Sonnox Bundle</h5>
               <h5 className="text-base text-black mb-2">Soundtoys Bundle</h5>
               <h5 className="text-base text-black">SSL Bundle</h5>
+            </div> 
+            <div className="relative order-1 md:order-2 md:!ml-24">
+              <Image
+                className="opacity-40 z-10 border border-white/40 rounded-xl w-[31.25rem] h-[25rem]"
+                src="/alpha-studio.png"
+                width={500}
+                height={700}
+                alt="Mastering Room"
+              />
+              <Image
+                className="absolute left-5 top-6 opacity-100 z-40 flex items-center border border-white/60 rounded-lg h-[22rem]"
+                src="/alpha-studio.png"
+                width={460}
+                height={760}
+                alt="Mastering Room"
+              />
             </div>
-            <Image
-              src="/alpha.png"
-              width={600}
-              height={400}
-              alt="eq image"
-              className="order-1 md:order-2 rounded-xl shadow-lg max-h-[25rem] object-cover"
-            />
           </div>
         </div>
       </div>
