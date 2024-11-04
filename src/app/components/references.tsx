@@ -5,7 +5,7 @@ type Props = {};
 const References = (props: Props) => {
   return (
     <div className="bg-white">
-      <div className="container w-full mx-auto mt-12">
+      <div className="container w-full mx-auto my-12">
         <h2 className="uppercase flex text-3xl md:text-4xl text-black font-bold items-center mb-12">
           <svg
             className="mr-3"
@@ -22,23 +22,23 @@ const References = (props: Props) => {
           </svg>
           References
         </h2>
-        <div className="grid grid-cols-2 md:!grid-cols-6">
+        <div className="grid grid-cols-2 md:!grid-cols-6 gap-4">
 
-          <div className="w-[10rem] h-[10rem] bg-black rounded-lg">
+          <div className="h-[10rem] bg-black rounded-lg">
           </div>
-          <div className="w-[10rem] h-[10rem] bg-black rounded-lg">
-
-          </div>
-          <div className="w-[10rem] h-[10rem] bg-black rounded-lg">
+          <div className="h-[10rem] bg-black rounded-lg">
 
           </div>
-          <div className="w-[10rem] h-[10rem] bg-black rounded-lg">
+          <div className="h-[10rem] bg-black rounded-lg">
 
           </div>
-          <div className="w-[10rem] h-[10rem] bg-black rounded-lg">
+          <div className="h-[10rem] bg-black rounded-lg">
 
           </div>
-          <div className="w-[10rem] h-[10rem] bg-black rounded-lg">
+          <div className="h-[10rem] bg-black rounded-lg">
+
+          </div>
+          <div className="h-[10rem] bg-black rounded-lg">
 
           </div>
         </div>
