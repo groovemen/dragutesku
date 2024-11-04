@@ -56,7 +56,7 @@ export default function Footer() {
           </div>
           <div className="grid justify-between gap-y-6 px-12">
             {LINKS.map(({ items }) => (
-              <ul key={items}>
+              <ul>
                 {items.map(({ title, href }) => (
                   <li key={title} className="py-2">
                     <Typography
@@ -106,7 +106,7 @@ export default function Footer() {
             <IconButton
               as="a"
               href="#"
-              color="white"
+              color="secondary"
               variant="ghost"
               size="sm"
               className="rounded-xl"
@@ -119,7 +119,7 @@ export default function Footer() {
             <IconButton
               as="a"
               href="#"
-              color="white"
+              color="secondary"
               variant="ghost"
               size="sm"
               className="rounded-xl"
@@ -131,7 +131,7 @@ export default function Footer() {
             <IconButton
               as="a"
               href="#"
-              color="white"
+              color="secondary"
               variant="ghost"
               size="sm"
               className="rounded-xl"

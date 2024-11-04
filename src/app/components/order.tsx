@@ -30,7 +30,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="company"
                   type="small"
-                  color="white"
+                  className="text-white"
                 >
                   Company/Label/Independent Artist*
                 </Typography>
@@ -48,7 +48,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="fullname"
                   type="small"
-                  color="white"
+                  className="text-white"
                 >
                   Full Name*
                 </Typography>
@@ -67,7 +67,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="email"
                   type="small"
-                  color="white"
+                  className="text-white"
                 >
                   Email*
                 </Typography>
@@ -81,7 +81,7 @@ const Order = (props: Props) => {
                 </Input>
               </div>
               <div className="w-full space-y-1">
-                <Typography as="label" htmlFor="vat" type="small" color="white">
+                <Typography as="label" htmlFor="vat" type="small" className="text-white">
                   VAT ID*
                 </Typography>
                 <Input color="secondary" size="lg">
@@ -95,7 +95,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="address"
                   type="small"
-                  color="white"
+                  className="text-white"
                 >
                   Street Address*
                 </Typography>
@@ -112,7 +112,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="city"
                   type="small"
-                  color="white"
+                  className="text-white"
                 >
                   City*
                 </Typography>
@@ -127,7 +127,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="postalcode"
                   type="small"
-                  color="white"
+                  className="text-white"
                 >
                   Postal Code*
                 </Typography>
@@ -144,7 +144,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="country"
                   type="small"
-                  color="white"
+                  className="text-white"
                 >
                   Country*
                 </Typography>
@@ -161,7 +161,7 @@ const Order = (props: Props) => {
               as="label"
               htmlFor="projectinfo"
               type="small"
-              color="white"
+              color="secondary"
             >
               Project Information*
             </Typography>
@@ -293,9 +293,8 @@ const Order = (props: Props) => {
               as="a"
               href="https://drgmastering.wetransfer.com"
               target="_blank"
-              className="rounded-xl uppercase mt-2"
+              className="bg-white rounded-xl uppercase mt-2"
               variant="outline"
-              color="white"
               size="lg"
             >
               Upload files here
