@@ -55,8 +55,8 @@ export default function Footer() {
             </Typography>
           </div>
           <div className="grid justify-between gap-y-6 px-12">
-            {LINKS.map(({ items }) => (
-              <ul>
+            {LINKS.map(({ items }, index) => (
+              <ul key={index}>
                 {items.map(({ title, href }) => (
                   <li key={title} className="py-2">
                     <Typography
