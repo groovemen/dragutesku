@@ -13,7 +13,7 @@ type Props = {};
 
 const Order = (props: Props) => {
   return (
-    <div id="contact" className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover">
+    <div id="contact" className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover px-8 md:px-0">
       <div className="container mx-auto py-12">
         <h2 className="uppercase flex text-3xl md:text-4xl text-white font-bold items-center mb-2">
           Order Information
@@ -171,7 +171,7 @@ const Order = (props: Props) => {
               placeholder="Message here..."
               className="text-white"
             />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
               <div className="flex items-center gap-2">
                 <Checkbox id="digital-mastering" color="secondary">
                   <Checkbox.Indicator />
@@ -293,6 +293,7 @@ const Order = (props: Props) => {
               as="a"
               href="https://drgmastering.wetransfer.com"
               target="_blank"
+              color="secondary"
               className="bg-white rounded-xl uppercase mt-2"
               variant="outline"
               size="lg"
@@ -301,7 +302,7 @@ const Order = (props: Props) => {
             </Button>
           </div>
 
-          <div className="px-12">
+          <div className="px-12 hidden md:block">
             <div className="relative mb-24">
               <Image
                 className="absolute opacity-40 m-4 z-10 border border-white/40 rounded-xl h-[33rem]"
