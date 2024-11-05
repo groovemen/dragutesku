@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,14 +7,29 @@ type Props = {};
 
 const Navbar: React.FC<Props> = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <React.Fragment>
-      <nav className="absolute w-full bg-gray-950 bg-opacity-30 backdrop-filter backdrop-blur-lg z-50">
+      <nav
+        className={`${
+          isScrolled ? "bg-black" : "bg-gray-950 bg-opacity-30 backdrop-filter backdrop-blur-lg"
+        } fixed top-0 w-full z-50 transition-colors duration-300`}
+      >
         <div className="mx-auto max-w-7xl py-2 px-4 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -128,24 +143,28 @@ const Navbar: React.FC<Props> = () => {
                 href="#studio"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit hover:text-white hover:text-white hover:font-semibold rounded-none"
                 aria-current="page"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 Studio
               </Link>
               <Link
                 href="#services"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit text-gray-300 hover:text-white hover:font-semibold rounded-none hover:text-white"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="#references"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit text-gray-300 hover:text-white hover:font-semibold rounded-none hover:text-white"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 References
               </Link>
               <Link
                 href="#contact"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit text-gray-300 hover:text-white hover:font-semibold rounded-none hover:text-white"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
               </Link>
