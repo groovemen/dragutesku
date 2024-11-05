@@ -25,13 +25,13 @@ const Studio = (props: Props) => {
                 alt="Mastering Room"
               />
               <Image
-                className="absolute left-5 top-6 opacity-100 z-40 flex items-center border border-white/60 rounded-lg h-[22rem]"
+                className="absolute left-5 top-6 opacity-100 z-20 flex items-center border border-white/60 rounded-lg h-[22rem]"
                 src="/eq.png"
                 width={460}
                 height={760}
                 alt="Mastering Room"
               />
-              <Typography className="absolute text-white text-sm -mt-16 ml-32 uppercase z-50">
+              <Typography className="absolute text-white text-sm -mt-16 ml-32 uppercase z-30">
                 Flat EQ Room in the Sweet Spot
               </Typography>
             </div>
