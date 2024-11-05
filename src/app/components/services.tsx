@@ -69,8 +69,8 @@ const Services = (props: Props) => {
             </div>
             <div className="md:pr-32 md:pl-12">
               <Typography type="h4" className="text-2xl text-white font-bold my-8">Elevate Your Sound to Perfection</Typography>
-              <Typography className="mb-6">Over 1000+ projects for labels and producers worldwide, crafted with over 12+ years of experience.</Typography>
-              <Typography className="mb-12">Are you prepared to captivate your audience with industry-level quality, clarity, and balance in every beat?</Typography>
+              <Typography className="text-white opacity-90 mb-6">Over 1000+ projects for labels and producers worldwide, crafted with over 12+ years of experience.</Typography>
+              <Typography className="text-white opacity-90 mb-12">Are you prepared to captivate your audience with industry-level quality, clarity, and balance in every beat?</Typography>
               <Button
                 as="a"
                 href="#"
