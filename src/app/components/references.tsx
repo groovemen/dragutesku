@@ -4,7 +4,7 @@ type Props = {};
 
 const References = (props: Props) => {
   return (
-    <div id="references" className="bg-white">
+    <div id="references" className="bg-white px-8 md:px-0">
       <div className="container w-full mx-auto my-12">
         <h2 className="uppercase flex text-3xl md:text-4xl text-black font-bold items-center mb-12">
           <svg
