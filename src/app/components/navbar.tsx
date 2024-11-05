@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,14 +7,29 @@ type Props = {};
 
 const Navbar: React.FC<Props> = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <React.Fragment>
-      <nav className="absolute w-full bg-gray-950 bg-opacity-30 backdrop-filter backdrop-blur-lg z-50">
+      <nav
+        className={`${
+          isScrolled ? "bg-black" : "bg-gray-950 bg-opacity-30 backdrop-filter backdrop-blur-lg"
+        } fixed top-0 w-full z-50 transition-colors duration-300`}
+      >
         <div className="mx-auto max-w-7xl py-2 px-4 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -66,26 +81,26 @@ const Navbar: React.FC<Props> = () => {
               <div className="hidden sm:ml-12 sm:block">
                 <div className="flex space-x-4">
                   <Link
-                    href="#"
+                    href="#studio"
                     className="px-3 py-2 text-base uppercase font-medium text-gray-300 hover:border-b hover:text-white hover:font-semibold transition-colors duration-200 ease-out hover:ease-in"
                     aria-current="page"
                   >
                     Studio
                   </Link>
                   <Link
-                    href="#"
+                    href="#services"
                     className="px-3 py-2 text-base uppercase font-medium text-gray-300 hover:border-b hover:text-white hover:font-semibold transition-colors duration-200 ease-out hover:ease-in"
                   >
                     Services
                   </Link>
                   <Link
-                    href="#"
+                    href="#references"
                     className="px-3 py-2 text-base uppercase font-medium text-gray-300 hover:border-b hover:text-white hover:font-semibold transition-colors duration-200 ease-out hover:ease-in"
                   >
                     References
                   </Link>
                   <Link
-                    href="#"
+                    href="#contact"
                     className="px-3 py-2 text-base uppercase font-medium text-gray-300 hover:border-b hover:text-white hover:font-semibold transition-colors duration-200 ease-out hover:ease-in"
                   >
                     Contact
@@ -125,27 +140,31 @@ const Navbar: React.FC<Props> = () => {
           <div className="sm:hidden" id="mobile-menu">
             <div className="flex items-center flex-col space-y-2 px-2 pb-3 pt-2">
               <Link
-                href="#"
+                href="#studio"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit hover:text-white hover:text-white hover:font-semibold rounded-none"
                 aria-current="page"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 Studio
               </Link>
               <Link
-                href="#"
+                href="#services"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit text-gray-300 hover:text-white hover:font-semibold rounded-none hover:text-white"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
-                href="#"
+                href="#references"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit text-gray-300 hover:text-white hover:font-semibold rounded-none hover:text-white"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 References
               </Link>
               <Link
-                href="#"
+                href="#contact"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit text-gray-300 hover:text-white hover:font-semibold rounded-none hover:text-white"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
               </Link>
