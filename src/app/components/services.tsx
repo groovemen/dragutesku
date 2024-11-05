@@ -8,7 +8,7 @@ type Props = {};
 const Services = (props: Props) => {
   return (
     <div id="services" className="bg-white">
-      <div className="container w-full mx-auto mt-12">
+      <div className="container w-full mx-auto mt-12 px-8 md:px-0">
         <h2 className="uppercase flex text-3xl md:text-4xl text-black font-bold items-center mb-12">
           <svg
             className="mr-3"
@@ -26,7 +26,7 @@ const Services = (props: Props) => {
           Services
         </h2>
       </div>
-      <div className="bg-[url('/vinyl.jpg')]">
+      <div className="bg-[url('/vinyl.jpg')] px-8 md:px-0">
         <div className="container w-full mx-auto py-12">
           <div className="grid md:!grid-cols-2 gap-24">
             <div className="grid grid-cols-1 md:!grid-cols-2 gap-8">
