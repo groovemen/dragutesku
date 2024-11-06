@@ -56,6 +56,7 @@ const Order = (props: Props) => {
                   <Input.Field
                     id="fullname"
                     type="text"
+                    placeholder="John Doe"
                     className="text-white"
                   />
                 </Input>
@@ -75,7 +76,7 @@ const Order = (props: Props) => {
                   <Input.Field
                     id="email"
                     type="email"
-                    placeholder="someone@example.com"
+                    placeholder="youremail@example.com"
                     className="text-white"
                   />
                 </Input>
@@ -85,7 +86,7 @@ const Order = (props: Props) => {
                   VAT ID*
                 </Typography>
                 <Input color="secondary" size="lg">
-                  <Input.Field id="vat" type="text" className="text-white" />
+                  <Input.Field id="vat" type="text" className="text-white" placeholder="4812***" />
                 </Input>
               </div>
             </div>
@@ -103,6 +104,7 @@ const Order = (props: Props) => {
                   <Input.Field
                     id="address"
                     type="text"
+                    placeholder="St. Aviators no. 1"
                     className="text-white"
                   />
                 </Input>
@@ -117,7 +119,11 @@ const Order = (props: Props) => {
                   City*
                 </Typography>
                 <Input color="secondary" size="lg">
-                  <Input.Field id="city" type="text" className="text-white" />
+                  <Input.Field 
+                    id="city" 
+                    type="text" 
+                    placeholder="Bucharest"
+                    className="text-white" />
                 </Input>
               </div>
             </div>
@@ -135,6 +141,7 @@ const Order = (props: Props) => {
                   <Input.Field
                     id="postalcode"
                     type="text"
+                    placeholder="012210"
                     className="text-white"
                   />
                 </Input>
@@ -152,6 +159,7 @@ const Order = (props: Props) => {
                   <Input.Field
                     id="country"
                     type="text"
+                    placeholder="Romania"
                     className="text-white"
                   />
                 </Input>
@@ -283,7 +291,7 @@ const Order = (props: Props) => {
               </div>
             </Radio>
             <Button
-              className="bg-white rounded-xl uppercase"
+              className="bg-white rounded-xl uppercase hover:bg-slate-300"
               color="secondary"
               size="lg"
             >
@@ -293,8 +301,8 @@ const Order = (props: Props) => {
               as="a"
               href="https://drgmastering.wetransfer.com"
               target="_blank"
-              color="secondary"
-              className="bg-white rounded-xl uppercase mt-2"
+              color="white"
+              className="rounded-xl uppercase mt-2 hover:bg-slate-800"
               variant="outline"
               size="lg"
             >
