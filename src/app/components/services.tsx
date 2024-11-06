@@ -77,7 +77,7 @@ const Services = (props: Props) => {
                 color="secondary"
                 variant="solid"
                 size="lg"
-                className="bg-white uppercase font-semibold rounded-xl"
+                className="bg-white hover:shadow-md hover:shadow-gray-100 uppercase rounded-xl"
               >
                 Request Pricelist
               </Button>
