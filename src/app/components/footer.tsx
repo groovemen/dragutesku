@@ -33,8 +33,8 @@ const YEAR = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <footer className="relative w-full py-8 ">
-      <div className="absolute inset-0 flex items-center justify-center bg-[url('/mixer.jpg')] bg-black bg-center bg-cover opacity-50 blur-sm"></div>
+    <footer className="relative w-full py-8 pt-24">
+      <div className="absolute inset-0 flex items-center justify-center bg-[url('/mixer.jpg')] bg-[#000] bg-center bg-cover opacity-30 blur-sm"></div>
       <div className="relative mx-auto w-full max-w-7xl px-8 z-50">
         <div className="flex">
           <div className="pr-24">

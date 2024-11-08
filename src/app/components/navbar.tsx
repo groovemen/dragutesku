@@ -28,7 +28,7 @@ const Navbar: React.FC<Props> = () => {
     <React.Fragment>
       <nav
         className={`${
-          isScrolled ? "bg-black" : "bg-gray-950 bg-opacity-30 backdrop-filter backdrop-blur-lg"
+          isScrolled ? "bg-[#000]" : "bg-[#000] bg-opacity-30 backdrop-filter backdrop-blur-lg"
         } fixed top-0 w-full z-50 transition-colors duration-300`}
       >
         <div className="mx-auto max-w-7xl py-2 px-4 sm:px-6 lg:px-8">
