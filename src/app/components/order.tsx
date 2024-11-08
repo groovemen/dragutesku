@@ -301,7 +301,7 @@ const Order = (props: Props) => {
               as="a"
               href="https://drgmastering.wetransfer.com"
               target="_blank"
-              color="white"
+              color="secondary"
               className="rounded-xl uppercase mt-2 hover:bg-slate-800"
               variant="outline"
               size="lg"
