@@ -301,8 +301,8 @@ const Order = (props: Props) => {
               as="a"
               href="https://drgmastering.wetransfer.com"
               target="_blank"
-              color="white"
-              className="rounded-xl uppercase mt-2 hover:bg-slate-800"
+              color="secondary"
+              className="text-white rounded-xl uppercase mt-2 hover:bg-slate-800"
               variant="outline"
               size="lg"
             >
@@ -320,7 +320,7 @@ const Order = (props: Props) => {
                 alt="studio"
               />
               <Image
-                className="absolute left-9 top-10 opacity-100 z-50 flex items-center border border-white/60 rounded-lg h-[30rem]"
+                className="absolute left-9 top-10 opacity-100 z-30 flex items-center border border-white/60 rounded-lg h-[30rem]"
                 src="/studio.jpg"
                 width="460"
                 height="760"
