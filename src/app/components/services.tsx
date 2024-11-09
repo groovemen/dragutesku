@@ -26,7 +26,7 @@ const Services = (props: Props) => {
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-28 h-28 border border-white rounded-full flex item-center justify-center">
-                  <Image className="p-2" src="/services/dj-mix.svg" width="80" height="80" alt="Digital Mastering" />
+                  <Image className="p-3" src="/services/dj-mix.svg" width="80" height="80" alt="Digital Mastering" />
                 </div>
                 <h6 className="uppercase text-white font-normal">DJ Mix & Podcast</h6>
               </div>
@@ -60,12 +60,9 @@ const Services = (props: Props) => {
               <Typography className="text-white opacity-90 mb-6">Over 1000+ projects for labels and producers worldwide, crafted with over 12+ years of experience.</Typography>
               <Typography className="text-white opacity-90 mb-12">Are you prepared to captivate your audience with industry-level quality, clarity, and balance in every beat?</Typography>
               <Button
-                as="a"
-                href="#"
+                className="bg-white rounded-xl uppercase hover:text-white hover:bg-gray-800"
                 color="secondary"
-                variant="solid"
                 size="lg"
-                className="bg-white hover:shadow-md hover:shadow-gray-100 uppercase rounded-xl"
               >
                 Request Pricelist
               </Button>

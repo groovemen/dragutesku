@@ -13,10 +13,11 @@ type Props = {};
 
 const Order = (props: Props) => {
   return (
-    <div id="contact" className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover px-8 md:px-0">
+    <div id="order" className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover px-8 md:px-0">
       <div className="container mx-auto py-12">
         <h2 className="uppercase flex text-3xl md:text-4xl text-white font-bold items-center mb-2">
-          Order Information
+          <Image src="/sound-vector.svg" className="w-16 mr-4" width={100} height={100} alt="soundWave " />
+          Order
         </h2>
         <p className="text-lg opacity-80">
           To request a quote or discuss a project, please fill out the form
@@ -30,7 +31,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="company"
                   type="small"
-                  className="text-white"
+                  className="text-white/70"
                 >
                   Company/Label/Independent Artist*
                 </Typography>
@@ -48,7 +49,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="fullname"
                   type="small"
-                  className="text-white"
+                  className="text-white/70"
                 >
                   Full Name*
                 </Typography>
@@ -68,7 +69,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="email"
                   type="small"
-                  className="text-white"
+                  className="text-white/70"
                 >
                   Email*
                 </Typography>
@@ -82,7 +83,7 @@ const Order = (props: Props) => {
                 </Input>
               </div>
               <div className="w-full space-y-1">
-                <Typography as="label" htmlFor="vat" type="small" className="text-white">
+                <Typography as="label" htmlFor="vat" type="small" className="text-white/70">
                   VAT ID*
                 </Typography>
                 <Input color="secondary" size="lg">
@@ -96,7 +97,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="address"
                   type="small"
-                  className="text-white"
+                  className="text-white/70"
                 >
                   Street Address*
                 </Typography>
@@ -114,7 +115,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="city"
                   type="small"
-                  className="text-white"
+                  className="text-white/70"
                 >
                   City*
                 </Typography>
@@ -133,7 +134,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="postalcode"
                   type="small"
-                  className="text-white"
+                  className="text-white/70"
                 >
                   Postal Code*
                 </Typography>
@@ -151,7 +152,7 @@ const Order = (props: Props) => {
                   as="label"
                   htmlFor="country"
                   type="small"
-                  className="text-white"
+                  className="text-white/70"
                 >
                   Country*
                 </Typography>
@@ -170,6 +171,7 @@ const Order = (props: Props) => {
               htmlFor="projectinfo"
               type="small"
               color="secondary"
+              className="text-white/70 -mb-2"
             >
               Project Information*
             </Typography>
@@ -291,7 +293,7 @@ const Order = (props: Props) => {
               </div>
             </Radio>
             <Button
-              className="bg-white rounded-xl uppercase hover:bg-slate-300"
+              className="bg-white rounded-xl uppercase hover:text-white hover:bg-gray-800 hover:font-semibold"
               color="secondary"
               size="lg"
             >
@@ -302,7 +304,7 @@ const Order = (props: Props) => {
               href="https://drgmastering.wetransfer.com"
               target="_blank"
               color="secondary"
-              className="text-white rounded-xl uppercase mt-2 hover:bg-slate-800"
+              className="text-white rounded-xl uppercase mt-2 hover:bg-gray-800 hover:font-semibold"
               variant="outline"
               size="lg"
             >
