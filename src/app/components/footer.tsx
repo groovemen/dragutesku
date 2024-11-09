@@ -33,7 +33,7 @@ const YEAR = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <footer className="relative w-full py-8 pt-24">
+    <footer id="contact" className="relative w-full py-8 pt-24">
       <div className="absolute inset-0 flex items-center justify-center bg-[url('/mixer.jpg')] bg-[#000] bg-center bg-cover opacity-30 blur-sm"></div>
       <div className="relative mx-auto w-full max-w-7xl px-8 z-50">
         <div className="flex">
@@ -76,13 +76,15 @@ export default function Footer() {
               <Image className="w-12" width={100} height={100} src="/eq-small.png" alt="EQ" />
               <Typography className="uppercase" type="h5">Contact</Typography>
             </div>
-            <Typography className="flex gap-2 my-4">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 4H19C20.1 4 21 4.9 21 6V18C21 19.1 20.1 20 19 20H3C1.9 20 1 19.1 1 18V6C1 4.9 1.9 4 3 4Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M21 6L11 13L1 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              drgmastering@gmail.com
-            </Typography>
+            <a href="mailto:drgmastering@gmail.com">
+              <Typography className="flex gap-2 my-4 underline">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 4H19C20.1 4 21 4.9 21 6V18C21 19.1 20.1 20 19 20H3C1.9 20 1 19.1 1 18V6C1 4.9 1.9 4 3 4Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M21 6L11 13L1 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                drgmastering@gmail.com
+              </Typography>
+            </a>
             <Typography className="flex gap-2">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 10C20 17 11 23 11 23C11 23 2 17 2 10C2 7.61305 2.94821 5.32387 4.63604 3.63604C6.32387 1.94821 8.61305 1 11 1C13.3869 1 15.6761 1.94821 17.364 3.63604C19.0518 5.32387 20 7.61305 20 10Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

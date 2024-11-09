@@ -26,7 +26,7 @@ const References = ({ references }: Props) => {
                 key={index}
                 className="w-[12rem] h-[12rem] bg-[#000] rounded-xl p-4 group relative mx-2 hover:shadow-xl cursor-pointer"
               >
-                <a href={reference.referenceLink} className="block text-white">
+                <a href={reference.referenceLink} target="_blank" className="block text-white">
                   <Image
                     src={reference.imgSrc}
                     className="rounded-2xl w-full h-full object-cover group-hover:opacity-40 transition-opacity duration-300"
