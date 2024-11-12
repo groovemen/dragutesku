@@ -21,7 +21,7 @@ const References = ({ references }: Props) => {
         </h2>
         <div className="overflow-hidden six-cards relative w-full mx-auto pb-12">
           <div className="flex animate-scroll">
-            {[...references, ...references].map((reference, index) => (
+            {([...references, ...references] as Reference[]).map((reference: { referenceLink: string | undefined; imgSrc: any; referenceAlt: any; }, index: React.Key | null | undefined) => (
               <div
                 key={index}
                 className="w-[12rem] h-[12rem] bg-[#000] rounded-xl p-4 group relative mx-2 hover:shadow-xl cursor-pointer"
