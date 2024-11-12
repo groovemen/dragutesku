@@ -14,7 +14,7 @@ const Services = (props: Props) => {
           Services
         </h2>
       </div>
-      <div className="bg-[url('/vinyl.jpg')] px-8 md:px-0">
+      <div className="bg-[url('/vinyl.jpg')] bg-no-repeat bg-cover px-8 md:px-0">
         <div className="container w-full mx-auto py-12">
           <div className="grid md:!grid-cols-2 gap-24">
             <div className="grid grid-cols-1 md:!grid-cols-2 gap-8">
