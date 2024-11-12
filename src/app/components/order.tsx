@@ -35,12 +35,15 @@ const Order = (props: Props) => {
                 >
                   Company/Label/Independent Artist*
                 </Typography>
-                <Input color="secondary" size="lg">
+                <Input 
+                  color="secondary" 
+                  size="lg"
+                >
                   <Input.Field
                     id="company"
                     type="text"
                     placeholder="Mix Master SRL"
-                    className="text-white"
+                    className="hover:!ring-white/30 focus:!ring-white/30 text-white"
                   />
                 </Input>
               </div>
@@ -58,7 +61,7 @@ const Order = (props: Props) => {
                     id="fullname"
                     type="text"
                     placeholder="John Doe"
-                    className="text-white"
+                    className="hover:!ring-white/30 focus:!ring-white/30 text-white"
                   />
                 </Input>
               </div>
@@ -78,7 +81,7 @@ const Order = (props: Props) => {
                     id="email"
                     type="email"
                     placeholder="youremail@example.com"
-                    className="text-white"
+                    className="hover:!ring-white/30 focus:!ring-white/30 text-white"
                   />
                 </Input>
               </div>
@@ -87,7 +90,7 @@ const Order = (props: Props) => {
                   VAT ID*
                 </Typography>
                 <Input color="secondary" size="lg">
-                  <Input.Field id="vat" type="text" className="text-white" placeholder="4812***" />
+                  <Input.Field id="vat" type="text" className="hover:!ring-white/30 focus:!ring-white/30 text-white" placeholder="4812***" />
                 </Input>
               </div>
             </div>
@@ -106,7 +109,7 @@ const Order = (props: Props) => {
                     id="address"
                     type="text"
                     placeholder="St. Aviators no. 1"
-                    className="text-white"
+                    className="hover:!ring-white/30 focus:!ring-white/30 text-white"
                   />
                 </Input>
               </div>
@@ -124,7 +127,7 @@ const Order = (props: Props) => {
                     id="city" 
                     type="text" 
                     placeholder="Bucharest"
-                    className="text-white" />
+                    className="hover:!ring-white/30 focus:!ring-white/30 text-white" />
                 </Input>
               </div>
             </div>
@@ -143,7 +146,7 @@ const Order = (props: Props) => {
                     id="postalcode"
                     type="text"
                     placeholder="012210"
-                    className="text-white"
+                    className="hover:!ring-white/30 focus:!ring-white/30 text-white"
                   />
                 </Input>
               </div>
@@ -161,7 +164,7 @@ const Order = (props: Props) => {
                     id="country"
                     type="text"
                     placeholder="Romania"
-                    className="text-white"
+                    className="hover:!ring-white/30 focus:!ring-white/30 text-white"
                   />
                 </Input>
               </div>
@@ -179,7 +182,7 @@ const Order = (props: Props) => {
               color="secondary"
               id="projectinfo"
               placeholder="Message here..."
-              className="text-white"
+              className="hover:!ring-white/30 focus:!ring-white/30 text-white"
             />
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
               <div className="flex items-center gap-2">
@@ -293,7 +296,7 @@ const Order = (props: Props) => {
               </div>
             </Radio>
             <Button
-              className="bg-white rounded-xl uppercase hover:text-white hover:bg-gray-800 hover:font-semibold"
+              className="bg-white rounded-xl uppercase hover:text-white hover:bg-gray-800"
               color="secondary"
               size="lg"
             >
@@ -304,7 +307,7 @@ const Order = (props: Props) => {
               href="https://drgmastering.wetransfer.com"
               target="_blank"
               color="secondary"
-              className="text-white rounded-xl uppercase mt-2 hover:bg-gray-800 hover:font-semibold"
+              className="text-white rounded-xl uppercase mt-2 hover:bg-gray-800"
               variant="outline"
               size="lg"
             >
