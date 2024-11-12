@@ -77,7 +77,7 @@ const Navbar: React.FC<Props> = () => {
             </div>
             <div className="flex flex-1 items-center justify-start sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
-                <Image className="h-12 w-auto" width={32} height={32} src="/logo.png" alt="DrgMastering Logo" />
+                <Image className="h-12 w-auto" width={200} height={100} src="/logo.png" alt="DrgMastering Logo" />
               </div>
               <div className="hidden sm:ml-12 sm:block">
                 <div className="flex space-x-4">
@@ -119,8 +119,9 @@ const Navbar: React.FC<Props> = () => {
               <div className="flex gap-8 sm:justify-center">
                 <IconButton
                   as="a"
-                  href="#"
+                  href="https://wa.me/+40761423156?text=I'm%20interested%20in%20your%20services"
                   color="secondary"
+                  target="_blank"
                   variant="ghost"
                   size="sm"
                   className="rounded-xl border-gray-50"
@@ -134,6 +135,7 @@ const Navbar: React.FC<Props> = () => {
                   as="a"
                   href="https://m.facebook.com/drgmastering/"
                   color="secondary"
+                  target="_blank"
                   variant="ghost"
                   size="sm"
                   className="rounded-xl border-gray-50"
@@ -146,6 +148,7 @@ const Navbar: React.FC<Props> = () => {
                   as="a"
                   href="https://www.instagram.com/drgmastering?igsh=MWl5N25jMGMybjEyZg=="
                   color="secondary"
+                  target="_blank"
                   variant="ghost"
                   size="sm"
                   className="rounded-xl border-gray-50"
