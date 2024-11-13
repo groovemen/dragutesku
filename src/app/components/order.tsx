@@ -8,7 +8,6 @@ import {
   Textarea,
   Radio,
 } from "@material-tailwind/react";
-import sendEmail from "../api/sendEmail";
 
 const Order = () => {
   const [formData, setFormData] = useState({
