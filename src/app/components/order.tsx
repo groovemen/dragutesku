@@ -46,17 +46,14 @@ const Order = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    // Email pattern validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(formData.email)) {
       alert("Please enter a valid email address.");
       return;
     }
   
-    // Log formData to inspect data structure and values
     console.log(JSON.stringify(formData, null, 2));
   
-    // Flatten options if necessary
     const flattenedFormData = {
       ...formData,
       ...formData.options
@@ -82,6 +79,7 @@ const Order = () => {
       alert('Failed to send email. Please try again.');
     }
   };
+ 
 
   return (
     <div id="order" className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover px-8 md:px-0">
@@ -337,25 +335,25 @@ const Order = () => {
                 Upload files here
               </Button>
             </div>
-          </div>
             
             <div className="px-12 hidden md:block">
-              <div className="relative mb-24">
+              <div className="relative mb-24 md:mt-10">
                 <Image
-                  className="absolute opacity-40 m-4 z-10 border border-white/40 rounded-xl h-[33rem]"
-                  src="/studio.jpg"
+                  className="absolute opacity-30 m-4 z-10 border border-white/40 rounded-xl h-[35rem]"
+                  src="/order-img.png"
                   width="500"
                   height="700"
                   alt="studio"
                 />
                 <Image
-                  className="absolute left-9 top-10 opacity-100 z-30 flex items-center border border-white/60 rounded-lg h-[30rem]"
+                  className="absolute left-9 top-10 opacity-100 z-30 flex items-center border border-white/60 rounded-lg h-[32rem]"
                   src="/studio.jpg"
                   width="460"
                   height="760"
                   alt="studio"
                 />
               </div>
+            </div>
             </div>
 
         </form>

@@ -14,9 +14,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const optionsSelected = Object.entries(options)
     .filter(([, selected]) => selected)
     .map(([option]) => option.replace(/([A-Z])/g, ' $1').trim())
-    .join(", ");
+    .join(", ") || "No options selected";
   
-  // Define the email template content
   const emailContent = EmailTemplate({
     company,
     fullname,
@@ -31,21 +30,18 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   });
 
   try {
-    // Send the email using Resend's SDK
     const { data, error } = await resend.emails.send({
       from: 'DRG Mastering <onboarding@resend.dev>',
       to: ['moldovanste@gmail.com'],
       subject: 'New Order - DRG Mastering',
-      react: emailContent, // Use the React component for email template
+      react: emailContent,
     });
 
-    // Handle errors from Resend SDK
     if (error) {
       console.error("Error from Resend:", error);
       return res.status(500).json({ error });
     }
 
-    // Respond with success if email sent successfully
     return res.status(200).json({ success: true, data });
   } catch (error) {
     console.error("Error sending email:", error);
