@@ -87,7 +87,7 @@ const Order = (props: Props) => {
               </div>
               <div className="w-full space-y-1">
                 <Typography as="label" htmlFor="vat" type="small" className="text-white/70">
-                  VAT ID*
+                  VAT ID
                 </Typography>
                 <Input color="secondary" size="lg">
                   <Input.Field id="vat" type="text" className="hover:!ring-white/30 focus:!ring-white/30 text-white" placeholder="4812***" />
@@ -333,9 +333,6 @@ const Order = (props: Props) => {
               />
             </div>
 
-            <div className="relative text-center">
-              <Image src="/sound-vector.svg" className="absolute left-40 md:mt-[40rem] text-center" width={200} height={100} alt="soundWave " />
-            </div>
           </div>
         </div>
       </div>
