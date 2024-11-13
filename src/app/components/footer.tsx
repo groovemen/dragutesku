@@ -107,8 +107,9 @@ export default function Footer() {
           <div className="flex gap-8 sm:justify-center">
             <IconButton
               as="a"
-              href="#"
+              href="https://wa.me/+40761423156?text=I'm%20interested%20in%20your%20services"
               color="secondary"
+              target="_blank"
               variant="ghost"
               size="sm"
               className="rounded-xl border-gray-50"
@@ -120,9 +121,10 @@ export default function Footer() {
             </IconButton>
             <IconButton
               as="a"
-              href="#"
+              href="https://m.facebook.com/drgmastering/"
               color="secondary"
               variant="ghost"
+              target="_blank"
               size="sm"
               className="rounded-xl border-gray-50"
             >
@@ -132,9 +134,10 @@ export default function Footer() {
             </IconButton>
             <IconButton
               as="a"
-              href="#"
+              href="https://www.instagram.com/drgmastering?igsh=MWl5N25jMGMybjEyZg=="
               color="secondary"
               variant="ghost"
+              target="_blank"
               size="sm"
               className="rounded-xl border-gray-50"
             >

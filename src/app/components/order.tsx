@@ -87,272 +87,6 @@ const Order = () => {
   return (
     <div id="order" className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover px-8 md:px-0">
       <div className="container mx-auto py-12">
-<<<<<<< Updated upstream
-        <h2 className="uppercase flex text-3xl md:text-4xl text-white font-bold items-center mb-2">
-          <Image src="/sound-vector.svg" className="w-16 mr-4" width={100} height={100} alt="soundWave " />
-          Order
-        </h2>
-        <p className="text-lg opacity-80">
-          To request a quote or discuss a project, please fill out the form
-          below.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="grid gap-4 mt-12">
-            <div className="flex gap-4">
-              <div className="w-full space-y-1">
-                <Typography
-                  as="label"
-                  htmlFor="company"
-                  type="small"
-                  className="text-white/70"
-                >
-                  Company/Label/Independent Artist*
-                </Typography>
-                <Input color="secondary" size="lg">
-                  <Input.Field
-                    id="company"
-                    type="text"
-                    placeholder="Mix Master SRL"
-                    className="text-white"
-                  />
-                </Input>
-              </div>
-              <div className="w-full space-y-1">
-                <Typography
-                  as="label"
-                  htmlFor="fullname"
-                  type="small"
-                  className="text-white/70"
-                >
-                  Full Name*
-                </Typography>
-                <Input color="secondary" size="lg">
-                  <Input.Field
-                    id="fullname"
-                    type="text"
-                    placeholder="John Doe"
-                    className="text-white"
-                  />
-                </Input>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-full space-y-1">
-                <Typography
-                  as="label"
-                  htmlFor="email"
-                  type="small"
-                  className="text-white/70"
-                >
-                  Email*
-                </Typography>
-                <Input color="secondary" size="lg">
-                  <Input.Field
-                    id="email"
-                    type="email"
-                    placeholder="youremail@example.com"
-                    className="text-white"
-                  />
-                </Input>
-              </div>
-              <div className="w-full space-y-1">
-                <Typography as="label" htmlFor="vat" type="small" className="text-white/70">
-                  VAT ID*
-                </Typography>
-                <Input color="secondary" size="lg">
-                  <Input.Field id="vat" type="text" className="text-white" placeholder="4812***" />
-                </Input>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-full space-y-1">
-                <Typography
-                  as="label"
-                  htmlFor="address"
-                  type="small"
-                  className="text-white/70"
-                >
-                  Street Address*
-                </Typography>
-                <Input color="secondary" size="lg">
-                  <Input.Field
-                    id="address"
-                    type="text"
-                    placeholder="St. Aviators no. 1"
-                    className="text-white"
-                  />
-                </Input>
-              </div>
-              <div className="w-full space-y-1">
-                <Typography
-                  as="label"
-                  htmlFor="city"
-                  type="small"
-                  className="text-white/70"
-                >
-                  City*
-                </Typography>
-                <Input color="secondary" size="lg">
-                  <Input.Field 
-                    id="city" 
-                    type="text" 
-                    placeholder="Bucharest"
-                    className="text-white" />
-                </Input>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-full space-y-1">
-                <Typography
-                  as="label"
-                  htmlFor="postalcode"
-                  type="small"
-                  className="text-white/70"
-                >
-                  Postal Code*
-                </Typography>
-                <Input color="secondary" size="lg">
-                  <Input.Field
-                    id="postalcode"
-                    type="text"
-                    placeholder="012210"
-                    className="text-white"
-                  />
-                </Input>
-              </div>
-              <div className="w-full space-y-1">
-                <Typography
-                  as="label"
-                  htmlFor="country"
-                  type="small"
-                  className="text-white/70"
-                >
-                  Country*
-                </Typography>
-                <Input color="secondary" size="lg">
-                  <Input.Field
-                    id="country"
-                    type="text"
-                    placeholder="Romania"
-                    className="text-white"
-                  />
-                </Input>
-              </div>
-            </div>
-            <Typography
-              as="label"
-              htmlFor="projectinfo"
-              type="small"
-              color="secondary"
-              className="text-white/70 -mb-2"
-            >
-              Project Information*
-            </Typography>
-            <Textarea
-              color="secondary"
-              id="projectinfo"
-              placeholder="Message here..."
-              className="text-white"
-            />
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-              <div className="flex items-center gap-2">
-                <Checkbox id="digital-mastering" color="secondary">
-                  <Checkbox.Indicator />
-                </Checkbox>
-                <Typography
-                  as="label"
-                  htmlFor="digital-mastering"
-                  className="cursor-pointer text-foreground"
-                >
-                  Digital Mastering
-                </Typography>
-              </div>
-              <div className="flex items-center gap-2">
-                <Checkbox id="stem-mastering" color="secondary">
-                  <Checkbox.Indicator />
-                </Checkbox>
-                <Typography
-                  as="label"
-                  htmlFor="stem-mastering"
-                  className="cursor-pointer text-foreground"
-                >
-                  Stem Mastering
-                </Typography>
-              </div>
-              <div className="flex items-center gap-2">
-                <Checkbox id="dj-mix" color="secondary">
-                  <Checkbox.Indicator />
-                </Checkbox>
-                <Typography
-                  as="label"
-                  htmlFor="dj-mix"
-                  className="cursor-pointer text-foreground"
-                >
-                  DJ Mix & Podcast
-                </Typography>
-              </div>
-              <div className="flex items-center gap-2">
-                <Checkbox id="mixdown" color="secondary">
-                  <Checkbox.Indicator />
-                </Checkbox>
-                <Typography
-                  as="label"
-                  htmlFor="mixdown"
-                  className="cursor-pointer text-foreground"
-                >
-                  Mixdown (only)
-                </Typography>
-              </div>
-              <div className="flex items-center gap-2">
-                <Checkbox id="vinyl-mastering" color="secondary">
-                  <Checkbox.Indicator />
-                </Checkbox>
-                <Typography
-                  as="label"
-                  htmlFor="vinyl-mastering"
-                  className="cursor-pointer text-foreground"
-                >
-                  Vinyl Mastering
-                </Typography>
-              </div>
-              <div className="flex items-center gap-2">
-                <Checkbox id="mixdown-mastering" color="secondary">
-                  <Checkbox.Indicator />
-                </Checkbox>
-                <Typography
-                  as="label"
-                  htmlFor="mixdown-mastering"
-                  className="cursor-pointer text-foreground"
-                >
-                  Mixdown + Mastering
-                </Typography>
-              </div>
-              <div className="flex items-center gap-2">
-                <Checkbox id="audio-restoration" color="secondary">
-                  <Checkbox.Indicator />
-                </Checkbox>
-                <Typography
-                  as="label"
-                  htmlFor="audio-restoration"
-                  className="cursor-pointer text-foreground"
-                >
-                  Audop Restoration
-                </Typography>
-              </div>
-            </div>
-            <hr className="mt-6" />
-            <Radio color="secondary">
-              <div className="flex items-center gap-2">
-                <Radio.Item id="radio-link-agree">
-                  <Radio.Indicator />
-                </Radio.Item>
-                <Typography
-                  as="label"
-                  htmlFor="radio-link-agree"
-                  className="text-foreground mt-6"
-                >
-                  I consent to having
-=======
         <form onSubmit={handleSubmit}>
           <h2 className="uppercase flex text-3xl md:text-4xl text-white font-bold items-center mb-2">
             <Image src="/sound-vector.svg" className="w-16 mr-4" width={100} height={100} alt="soundWave " />
@@ -366,7 +100,6 @@ const Order = () => {
             <div className="grid gap-4 mt-12">
               <div className="flex gap-4">
                 <div className="w-full space-y-1">
->>>>>>> Stashed changes
                   <Typography
                     as="label"
                     htmlFor="company"
@@ -410,44 +143,6 @@ const Order = () => {
                   </Input>
                 </div>
               </div>
-<<<<<<< Updated upstream
-            </Radio>
-            <Button
-              className="bg-white rounded-xl uppercase hover:text-white hover:bg-gray-800 hover:font-semibold"
-              color="secondary"
-              size="lg"
-            >
-              Submit
-            </Button>
-            <Button
-              as="a"
-              href="https://drgmastering.wetransfer.com"
-              target="_blank"
-              color="secondary"
-              className="text-white rounded-xl uppercase mt-2 hover:bg-gray-800 hover:font-semibold"
-              variant="outline"
-              size="lg"
-            >
-              Upload files here
-            </Button>
-          </div>
-
-          <div className="px-12 hidden md:block">
-            <div className="relative mb-24">
-              <Image
-                className="absolute opacity-40 m-4 z-10 border border-white/40 rounded-xl h-[33rem]"
-                src="/studio.jpg"
-                width="500"
-                height="700"
-                alt="studio"
-              />
-              <Image
-                className="absolute left-9 top-10 opacity-100 z-30 flex items-center border border-white/60 rounded-lg h-[30rem]"
-                src="/studio.jpg"
-                width="460"
-                height="760"
-                alt="studio"
-=======
               <div className="flex gap-4">
                 <div className="w-full space-y-1">
                   <Typography
@@ -585,7 +280,6 @@ const Order = () => {
                 className="hover:!ring-white/30 focus:!ring-white/30 text-white"
                 value={formData.projectinfo} 
                 onChange={handleChange}
->>>>>>> Stashed changes
               />
               <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
                 {["digitalMastering", "stemMastering", "djMix", "mixdown", "vinylMastering", "mixdownMastering", "audioRestoration"].map((option: React.Key | null | undefined) => (
@@ -644,11 +338,8 @@ const Order = () => {
                 Upload files here
               </Button>
             </div>
-
-<<<<<<< Updated upstream
-            <div className="relative text-center">
-              <Image src="/sound-vector.svg" className="absolute left-40 md:mt-[40rem] text-center" width={200} height={100} alt="soundWave " />
-=======
+          </div>
+            
             <div className="px-12 hidden md:block">
               <div className="relative mb-24">
                 <Image
@@ -666,10 +357,7 @@ const Order = () => {
                   alt="studio"
                 />
               </div>
-
->>>>>>> Stashed changes
             </div>
-          </div>
 
         </form>
       </div>
