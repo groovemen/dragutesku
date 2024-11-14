@@ -12,7 +12,7 @@ function CustomNavigation() {
   const swiper = useSwiper();
 
   return (
-    <>
+    <div className="hidden sm:block">
       <IconButton
         isCircular
         size="lg"
@@ -33,7 +33,7 @@ function CustomNavigation() {
       >
         <NavArrowRight className="h-7 w-7 translate-x-px stroke-2" />
       </IconButton>
-    </>
+    </div>
   );
 }
 
@@ -60,7 +60,7 @@ export default function Carousela() {
           renderBullet: customPagination,
         }}
         modules={[Autoplay, Keyboard, Navigation, Pagination]}
-        className="relative w-full max-h-screen [&_div.swiper-button-next]:text-background [&_div.swiper-button-prev]:text-background "
+        className="relative w-full h-[70dvh] sm:h-auto max-h-screen [&_div.swiper-button-next]:text-background [&_div.swiper-button-prev]:text-background"
       >
         {[
           "/slide1.jpg",
@@ -71,11 +71,11 @@ export default function Carousela() {
             <img
               src={img}
               alt={`image-${index}`}
-              className="w-full object-cover"
+              className="w-auto sm:w-full h-full sm:h-auto object-cover"
             />
           </SwiperSlide>
         ))}
-        <CustomNavigation />
+        <CustomNavigation  />
       </Swiper>
     </div>
   );

@@ -33,11 +33,12 @@ const YEAR = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <footer id="contact" className="relative w-full py-8 pt-24">
-      <div className="absolute inset-0 flex items-center justify-center bg-[url('/mixer.jpg')] bg-[#000] bg-bottom bg-cover opacity-30 blur-sm"></div>
-      <div className="relative mx-auto w-full md:max-w-7xl 2xl:max-w-[100rem] px-8 md:px-0 z-50">
+    <footer id="contact" className="relative w-full sm:py-8">
+      <div className="absolute w-full h-full bg-[url('/mixer.jpg')] bg-bottom bg-cover blur-sm"></div>
+      <div className="absolute inset-0 h-full flex items-center justify-center bg-[#000000]/30"></div>
+      <div className="relative mx-auto w-full md:max-w-7xl 2xl:max-w-[100rem] px-8 md:px-0 z-30 pt-12">
         <div className="block md:flex">
-          <div className="pr-24">
+          <div className="sm:pr-24">
             <Image
               className="h-12 md:h-24 w-auto mb-8"
               width={200}
@@ -46,7 +47,7 @@ export default function Footer() {
               alt="DrgMastering Logo"
             />
             <Typography
-              className="max-w-md"
+              className="sm:max-w-md text-white/80"
             >
               Ready to transform your music? contact <b>DRG MASTERING</b> today!
               Whether you're seeking a free consultation or want to discuss your
@@ -54,7 +55,7 @@ export default function Footer() {
               music.
             </Typography>
           </div>
-          <div className="flex">
+
             <div className="md:px-12 mt-4 md:mt-0">
               {LINKS.map(({ items }, index) => (
                 <ul key={index} className="grid justify-between">
@@ -63,7 +64,7 @@ export default function Footer() {
                       <Typography
                         as="a"
                         href={href}
-                        className="uppercase hover:font-semibold cursor-pointer"
+                        className="uppercase text-white hover:font-semibold cursor-pointer"
                       >
                         {title}
                       </Typography>
@@ -72,13 +73,13 @@ export default function Footer() {
                 </ul>
               ))}
             </div>
-            <div className="pl-12 pt-8 md:pl-24 md:pt-0">
+            <div className="pt-8">
               <div className="flex gap-4 mb-12">
                 <Image className="w-12" width={100} height={100} src="/eq-small.png" alt="EQ" />
-                <Typography className="uppercase" type="h5">Contact</Typography>
+                <Typography className="uppercase text-white" type="h5">Contact</Typography>
               </div>
               <a href="mailto:drgmastering@gmail.com">
-                <Typography className="flex gap-2 my-4 underline">
+                <Typography className="flex gap-2 my-4 underline text-white">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 4H19C20.1 4 21 4.9 21 6V18C21 19.1 20.1 20 19 20H3C1.9 20 1 19.1 1 18V6C1 4.9 1.9 4 3 4Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     <path d="M21 6L11 13L1 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -86,7 +87,7 @@ export default function Footer() {
                   drgmastering@gmail.com
                 </Typography>
               </a>
-              <Typography className="flex gap-2">
+              <Typography className="flex gap-2 text-white">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 10C20 17 11 23 11 23C11 23 2 17 2 10C2 7.61305 2.94821 5.32387 4.63604 3.63604C6.32387 1.94821 8.61305 1 11 1C13.3869 1 15.6761 1.94821 17.364 3.63604C19.0518 5.32387 20 7.61305 20 10Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M11 13C12.6569 13 14 11.6569 14 10C14 8.34315 12.6569 7 11 7C9.34315 7 8 8.34315 8 10C8 11.6569 9.34315 13 11 13Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -94,9 +95,9 @@ export default function Footer() {
                 Bucharest, Romania
               </Typography>
             </div>
-          </div>
+
         </div>
-        <div className="mt-10 flex w-full flex-col md:items-center md:justify-center gap-4 border-t border-surface py-8 md:flex-row md:justify-between">
+        <div className="mt-10 text-white flex w-full flex-col md:items-center md:justify-center gap-4 border-t border-surface py-8 md:flex-row md:justify-between">
           <div>
             <Typography type="small" className="text-center uppercase">
               MUSIC MIX MASTERS SRL
