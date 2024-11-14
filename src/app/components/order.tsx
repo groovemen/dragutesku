@@ -43,40 +43,76 @@ const Order = () => {
     }
   };
   
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(formData.email)) {
-      alert("Please enter a valid email address.");
-      return;
-    }
-  
-    console.log(JSON.stringify(formData, null, 2));
-  
-    const flattenedFormData = {
-      ...formData,
-      ...formData.options
-    };
-    delete flattenedFormData.options;
-  
     try {
+      // Validate email format
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(formData.email)) {
+        window.alert("Please enter a valid email address.");
+        return;
+      }
+  
+      // Validate required fields
+      const requiredFields = ['company', 'fullname', 'email', 'address', 'city', 'postalcode', 'country'];
+      const missingFields = requiredFields.filter(field => !formData[field]);
+      
+      if (missingFields.length > 0) {
+        window.alert(`Please fill in the following required fields: ${missingFields.join(', ')}`);
+        return;
+      }
+  
+      // Prepare data for submission
+      const flattenedFormData = {
+        ...formData,
+        ...formData.options
+      };
+      delete flattenedFormData.options;
+  
+      // Send request
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
         body: JSON.stringify(flattenedFormData),
       });
   
       const result = await response.json();
-      if (response.ok) {
-        alert('Email sent successfully!');
-      } else {
-        console.error('Error sending email:', result.error);
-        alert('Failed to send email. Please try again.');
+  
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send email');
       }
+  
+      // Success handling
+      window.alert('Email sent successfully!');
+      
+      // Reset form
+      setFormData({
+        company: '',
+        fullname: '',
+        email: '',
+        vat: '',
+        address: '',
+        city: '',
+        postalcode: '',
+        country: '',
+        projectinfo: '',
+        options: {
+          digitalMastering: false,
+          stemMastering: false,
+          djMix: false,
+          mixdown: false,
+          vinylMastering: false,
+          mixdownMastering: false,
+          audioRestoration: false,
+        },
+      });
     } catch (error) {
       console.error('Error sending email:', error);
-      alert('Failed to send email. Please try again.');
+      window.alert(error instanceof Error ? error.message : 'Failed to send email. Please try again.');
     }
   };
  
@@ -340,7 +376,7 @@ const Order = () => {
               <div className="relative mb-24 md:mt-10">
                 <Image
                   className="absolute opacity-30 m-4 z-10 border border-white/40 rounded-xl h-[35rem]"
-                  src="/order-img.png"
+                  src="/studio.jpg"
                   width="500"
                   height="700"
                   alt="studio"
