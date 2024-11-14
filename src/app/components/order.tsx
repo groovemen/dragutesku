@@ -31,15 +31,18 @@ const Order = () => {
     },
   });
 
-  const handleChange = (e: { target: { id: any; value: any; type: any; checked: any; }; }) => {
-    const { id, value, type, checked } = e.target;
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value, type } = e.target;
+  
+    // Check if the target is an HTMLInputElement and whether it's a checkbox
     if (type === "checkbox") {
-      setFormData((prev) => ({
+      const { checked } = e.target as HTMLInputElement; // Cast to HTMLInputElement to access checked
+      setFormData(prev => ({
         ...prev,
-        options: { ...prev.options, [id]: checked },
+        options: { ...prev.options, [id]: checked }
       }));
     } else {
-      setFormData((prev) => ({ ...prev, [id]: value }));
+      setFormData(prev => ({ ...prev, [id]: value }));
     }
   };
   
@@ -56,19 +59,18 @@ const Order = () => {
   
       // Validate required fields
       const requiredFields = ['company', 'fullname', 'email', 'address', 'city', 'postalcode', 'country'];
-      const missingFields = requiredFields.filter(field => !formData[field]);
-      
+      const missingFields = requiredFields.filter(field => !formData[field as keyof typeof formData]);
+
       if (missingFields.length > 0) {
         window.alert(`Please fill in the following required fields: ${missingFields.join(', ')}`);
         return;
       }
   
       // Prepare data for submission
-      const flattenedFormData = {
+      const { options, ...flattenedFormData } = {
         ...formData,
-        ...formData.options
+        ...formData.options,
       };
-      delete flattenedFormData.options;
   
       // Send request
       const response = await fetch('/api/sendEmail', {
@@ -315,7 +317,7 @@ const Order = () => {
                 onChange={handleChange}
               />
               <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-                {["digitalMastering", "stemMastering", "djMix", "mixdown", "vinylMastering", "mixdownMastering", "audioRestoration"].map((option: React.Key | null | undefined) => (
+                {/* {["digitalMastering", "stemMastering", "djMix", "mixdown", "vinylMastering", "mixdownMastering", "audioRestoration"].map((option: React.Key | null | undefined) => (
                   <div key={option} className="flex items-center gap-2">
                     <Checkbox color="secondary" id={option} onChange={handleChange}>
                       <Checkbox.Indicator />
@@ -324,7 +326,18 @@ const Order = () => {
                       {option.replace(/([A-Z])/g, ' $1').trim()}
                     </Typography>
                   </div>
-                ))}
+                ))} */}
+                {["digitalMastering", "stemMastering", "djMix", "mixdown", "vinylMastering", "mixdownMastering", "audioRestoration"]
+                  .map((option: string | null | undefined) => option ? (
+                    <div key={option} className="flex items-center gap-2">
+                      <Checkbox color="secondary" id={option} onChange={handleChange}>
+                        <Checkbox.Indicator />
+                      </Checkbox>
+                      <Typography className="capitalize" as="label" htmlFor={option}>
+                        {option}
+                      </Typography>
+                    </div>
+                  ) : null)}
               </div>
               <hr className="mt-6" />
               <Radio color="secondary">
