@@ -44,7 +44,7 @@ const Navbar: React.FC<Props> = () => {
                 <span className="sr-only">Open main menu</span>
                 {isMobileMenuOpen ? (
                   <svg
-                    className="block h-6 w-6"
+                    className="block h-8 w-8"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
@@ -59,7 +59,7 @@ const Navbar: React.FC<Props> = () => {
                   </svg>
                 ) : (
                   <svg
-                    className="block h-6 w-6"
+                    className="block h-8 w-8"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
@@ -116,7 +116,7 @@ const Navbar: React.FC<Props> = () => {
               </div>
             </div>
             <div className="absolute inset-y-0 gap-3 !right-10 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <div className="flex gap-8 sm:justify-center">
+              <div className="flex gap-4 md:gap-8 sm:justify-center mr-4">
                 <IconButton
                   as="a"
                   href="https://wa.me/+40761423156?text=I'm%20interested%20in%20your%20services"
