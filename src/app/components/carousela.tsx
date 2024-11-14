@@ -43,7 +43,7 @@ function customPagination() {
 
 export default function Carousela() {
   return (
-    <div className="w-full h-screen">
+    <div id="home" className="w-full h-screen">
       <Swiper
         pagination={{
           enabled: true,
