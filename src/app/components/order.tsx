@@ -120,14 +120,14 @@ const Order = () => {
  
 
   return (
-    <div id="order" className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover px-8 md:px-0 pt-12">
+    <div id="order" className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover px-4 md:px-0 pt-12">
       <div className="container mx-auto py-12">
         <form onSubmit={handleSubmit}>
           <h2 className="uppercase flex text-3xl md:text-4xl text-white font-bold items-center mb-2">
             <Image src="/sound-vector.svg" className="w-16 mr-4" width={100} height={100} alt="soundWave " />
             Order
           </h2>
-          <p className="text-lg opacity-80">
+          <p className="text-lg text-white opacity-80">
             To request a quote or discuss a project, please fill out the form
             below.
           </p>
@@ -323,7 +323,7 @@ const Order = () => {
                       <Checkbox color="secondary" id={option} onChange={handleChange}>
                         <Checkbox.Indicator />
                       </Checkbox>
-                      <Typography className="capitalize" as="label" htmlFor={option}>
+                      <Typography className="capitalize text-white" as="label" htmlFor={option}>
                         {option}
                       </Typography>
                     </div>
@@ -338,7 +338,7 @@ const Order = () => {
                   <Typography
                     as="label"
                     htmlFor="radio-link-agree"
-                    className="text-foreground mt-6"
+                    className="text-white mt-6"
                   >
                     I consent to having
                     <Typography

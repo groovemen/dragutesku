@@ -33,78 +33,41 @@ const YEAR = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <footer id="contact" className="relative w-full py-8 pt-24">
-      <div className="absolute inset-0 flex items-center justify-center bg-[url('/mixer.jpg')] bg-[#000] bg-bottom bg-cover opacity-30 blur-sm"></div>
-      <div className="relative mx-auto w-full md:max-w-7xl 2xl:max-w-[100rem] px-8 md:px-0 z-50">
-        <div className="block md:flex">
-          <div className="pr-24">
-            <Image
-              className="h-12 md:h-24 w-auto mb-8"
-              width={200}
-              height={100}
-              src="/logo.png"
-              alt="DrgMastering Logo"
-            />
-            <Typography
-              className="max-w-md"
-            >
-              Ready to transform your music? contact <b>DRG MASTERING</b> today!
-              Whether you're seeking a free consultation or want to discuss your
-              next project, we're prepared to assist you in creating your best
-              music.
-            </Typography>
-          </div>
-          <div className="flex">
-            <div className="md:px-12 mt-4 md:mt-0">
-              {LINKS.map(({ items }, index) => (
-                <ul key={index} className="grid justify-between">
-                  {items.map(({ title, href }) => (
-                    <li key={title} className="py-2">
-                      <Typography
-                        as="a"
-                        href={href}
-                        className="uppercase hover:font-semibold cursor-pointer"
-                      >
-                        {title}
-                      </Typography>
-                    </li>
-                  ))}
-                </ul>
-              ))}
+    <footer id="contact" className="relative w-full sm:py-8">
+      <div className="absolute w-full h-full bg-[url('/mixer.jpg')] bg-bottom bg-cover blur-sm"></div>
+      {/* <div className="absolute inset-0 h-full flex items-center justify-center bg-[#000]/30"></div> */}
+      <div className="relative mx-auto w-full md:max-w-7xl 2xl:max-w-[100rem] px-8 md:px-0 z-30 pt-12">
+        <div className="relative max-w-[50rem] mx-auto text-center p-12 border border-white/30 rounded-xl">
+          <div className="absolute inset-0 w-full h-full bg-[#fff]/30 blur-sm"></div>
+          <div className="flex flex-col items-center justify-center">
+            <div className="flex items-center gap-4 mb-4">
+              <Typography className="uppercase text-white" type="h2">Contact</Typography>
             </div>
-            <div className="pl-12 pt-8 md:pl-24 md:pt-0">
-              <div className="flex gap-4 mb-12">
-                <Image className="w-12" width={100} height={100} src="/eq-small.png" alt="EQ" />
-                <Typography className="uppercase" type="h5">Contact</Typography>
-              </div>
-              <a href="mailto:drgmastering@gmail.com">
-                <Typography className="flex gap-2 my-4 underline">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 4H19C20.1 4 21 4.9 21 6V18C21 19.1 20.1 20 19 20H3C1.9 20 1 19.1 1 18V6C1 4.9 1.9 4 3 4Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M21 6L11 13L1 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                  drgmastering@gmail.com
-                </Typography>
-              </a>
-              <Typography className="flex gap-2">
+            <a href="mailto:drgmastering@gmail.com">
+              <Typography className="flex gap-2 my-4 underline uppercase text-white">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 10C20 17 11 23 11 23C11 23 2 17 2 10C2 7.61305 2.94821 5.32387 4.63604 3.63604C6.32387 1.94821 8.61305 1 11 1C13.3869 1 15.6761 1.94821 17.364 3.63604C19.0518 5.32387 20 7.61305 20 10Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M11 13C12.6569 13 14 11.6569 14 10C14 8.34315 12.6569 7 11 7C9.34315 7 8 8.34315 8 10C8 11.6569 9.34315 13 11 13Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M3 4H19C20.1 4 21 4.9 21 6V18C21 19.1 20.1 20 19 20H3C1.9 20 1 19.1 1 18V6C1 4.9 1.9 4 3 4Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M21 6L11 13L1 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                Bucharest, Romania
+                drgmastering@gmail.com
+              </Typography>
+            </a>
+            <Typography className="flex gap-2 text-white mb-8 uppercase">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 10C20 17 11 23 11 23C11 23 2 17 2 10C2 7.61305 2.94821 5.32387 4.63604 3.63604C6.32387 1.94821 8.61305 1 11 1C13.3869 1 15.6761 1.94821 17.364 3.63604C19.0518 5.32387 20 7.61305 20 10Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M11 13C12.6569 13 14 11.6569 14 10C14 8.34315 12.6569 7 11 7C9.34315 7 8 8.34315 8 10C8 11.6569 9.34315 13 11 13Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              Bucharest, Romania
+            </Typography>
+            <div className="mb-12">
+              <Typography type="h4" className="text-center uppercase">
+                MUSIC MIX MASTERS SRL
+              </Typography>
+              <br/>
+              <Typography type="h4" className="text-center uppercase">
+                CUI 42820820 | VAT ID: RO47403670
               </Typography>
             </div>
-          </div>
-        </div>
-        <div className="mt-10 flex w-full flex-col md:items-center md:justify-center gap-4 border-t border-surface py-8 md:flex-row md:justify-between">
-          <div>
-            <Typography type="small" className="text-center uppercase">
-              MUSIC MIX MASTERS SRL
-            </Typography>
-            <br/>
-            <Typography type="small" className="text-center uppercase">
-              CUI 42820820 | VAT ID: RO47403670
-            </Typography>
           </div>
           <div className="flex gap-8 sm:justify-center">
             <IconButton
@@ -150,6 +113,9 @@ export default function Footer() {
               </svg>
             </IconButton>
           </div>
+        </div>
+        <div className="mt-10 text-white flex md:items-center md:justify-center border-t border-surface py-8">
+          © 2024 DRGMASTERING&nbsp; •&nbsp; <a href="#">PRIVACY POLICY</a>&nbsp; / &nbsp;<a href="#">TERMS & CONDITIONS</a>
         </div>
       </div>
     </footer>
