@@ -1,9 +1,10 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 import * as React from "react";
-import { Autoplay, Keyboard, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Keyboard, Navigation, Pagination } from "swiper/modules";
 import { IconButton } from "@material-tailwind/react";
 import { NavArrowRight, NavArrowLeft } from "iconoir-react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
@@ -41,16 +42,17 @@ function customPagination() {
   return `<span class="w-4 h-4 [&.swiper-pagination-bullet-active]:!opacity-100 [&.swiper-pagination-bullet-active]:[background:rgb(var(--color-background))] !opacity-50 ![background:rgb(var(--color-background))]"></span>`;
 }
 
-export default function Carousela() {
+export default function Carousel() {
   return (
     <div id="home" className="w-full">
       <Swiper
+        effect="fade"
         loop={true}
         keyboard={{
           enabled: true,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 7500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -59,7 +61,7 @@ export default function Carousela() {
           dynamicBullets: true,
           renderBullet: customPagination,
         }}
-        modules={[Autoplay, Keyboard, Navigation, Pagination]}
+        modules={[Autoplay, EffectFade, Keyboard, Navigation, Pagination]}
         className="relative w-full h-[70dvh] sm:h-auto max-h-screen [&_div.swiper-button-next]:text-background [&_div.swiper-button-prev]:text-background"
       >
         {[
