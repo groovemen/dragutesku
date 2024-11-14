@@ -31,7 +31,7 @@ const Navbar: React.FC<Props> = () => {
           isScrolled ? "bg-[#000]" : "bg-[#000] bg-opacity-30 backdrop-filter backdrop-blur-lg"
         } fixed top-0 w-full z-50 transition-colors duration-300`}
       >
-        <div className="mx-auto max-w-7xl py-2 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto md:max-w-7xl 2xl:max-w-[100rem] py-2 px-4 sm:px-0">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
               <button
@@ -77,7 +77,7 @@ const Navbar: React.FC<Props> = () => {
             </div>
             <div className="flex flex-1 items-center justify-start sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
-                <Image className="h-12 w-auto" width={200} height={100} src="/logo.png" alt="DrgMastering Logo" />
+                <Image className="h-10 md:h-12 w-auto" width={200} height={100} src="/logo.png" alt="DrgMastering Logo" />
               </div>
               <div className="hidden sm:ml-12 sm:block">
                 <div className="flex space-x-4">

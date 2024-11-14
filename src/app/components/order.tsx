@@ -120,7 +120,7 @@ const Order = () => {
  
 
   return (
-    <div id="order" className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover px-8 md:px-0">
+    <div id="order" className="relative bg-[url('/vinyl.jpg')] bg-center bg-cover px-8 md:px-0 pt-12">
       <div className="container mx-auto py-12">
         <form onSubmit={handleSubmit}>
           <h2 className="uppercase flex text-3xl md:text-4xl text-white font-bold items-center mb-2">
@@ -141,7 +141,7 @@ const Order = () => {
                     type="small"
                     className="text-white/70"
                   >
-                    Company/Label/Independent Artist*
+                    Company/Label/Artist*
                   </Typography>
                   <Input 
                     color="secondary" 
@@ -317,16 +317,6 @@ const Order = () => {
                 onChange={handleChange}
               />
               <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-                {/* {["digitalMastering", "stemMastering", "djMix", "mixdown", "vinylMastering", "mixdownMastering", "audioRestoration"].map((option: React.Key | null | undefined) => (
-                  <div key={option} className="flex items-center gap-2">
-                    <Checkbox color="secondary" id={option} onChange={handleChange}>
-                      <Checkbox.Indicator />
-                    </Checkbox>
-                    <Typography className="capitalize" as="label" htmlFor={option}>
-                      {option.replace(/([A-Z])/g, ' $1').trim()}
-                    </Typography>
-                  </div>
-                ))} */}
                 {["digitalMastering", "stemMastering", "djMix", "mixdown", "vinylMastering", "mixdownMastering", "audioRestoration"]
                   .map((option: string | null | undefined) => option ? (
                     <div key={option} className="flex items-center gap-2">
@@ -403,8 +393,7 @@ const Order = () => {
                 />
               </div>
             </div>
-            </div>
-
+          </div>
         </form>
       </div>
     </div>
