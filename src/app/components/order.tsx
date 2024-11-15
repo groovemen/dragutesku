@@ -36,20 +36,36 @@ const Order = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value, type } = e.target;
   
-    // Check if the target is an HTMLInputElement and whether it's a checkbox
-    if (type === "checkbox") {
-      const { checked } = e.target as HTMLInputElement; // Cast to HTMLInputElement to access checked
+     // Check if it's a radio or checkbox input
+  if (type === "checkbox" || type === "radio") {
+    const { checked } = e.target as HTMLInputElement; // Cast to HTMLInputElement to access 'checked' property
+    if (id === "radio-link-agree") {
+      setIsRadioSelected(checked); // This updates the radio button state
+    } else {
       setFormData(prev => ({
         ...prev,
-        options: { ...prev.options, [id]: checked }
+        options: { ...prev.options, [id]: checked },
       }));
-    } else {
-      setFormData(prev => ({ ...prev, [id]: value }));
     }
+  } else {
+    setFormData(prev => ({ ...prev, [id]: value }));
+  }
+
+   // Use a type guard to ensure e.target is an HTMLInputElement
+  if (e.target instanceof HTMLInputElement) {
+    const { checked } = e.target;
 
     if (id === "radio-link-agree") {
-      setIsRadioSelected(e.target.checked);
+      setIsRadioSelected(checked); // This will work because we've narrowed the type
+    } else {
+      setFormData(prev => ({
+        ...prev,
+        options: { ...prev.options, [id]: checked },
+      }));
     }
+  } else {
+    setFormData(prev => ({ ...prev, [id]: value }));
+  }
   };
   
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
