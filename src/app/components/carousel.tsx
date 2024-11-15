@@ -46,7 +46,11 @@ export default function Carousel() {
   return (
     <div id="home" className="w-full">
       <Swiper
+        speed={1500}
         effect="fade"
+        fadeEffect={{
+          crossFade: true,
+        }}
         loop={true}
         keyboard={{
           enabled: true,
@@ -62,7 +66,7 @@ export default function Carousel() {
           renderBullet: customPagination,
         }}
         modules={[Autoplay, EffectFade, Keyboard, Navigation, Pagination]}
-        className="relative w-full h-[70dvh] sm:h-auto max-h-screen [&_div.swiper-button-next]:text-background [&_div.swiper-button-prev]:text-background"
+        className="relative w-full h-[70dvh] sm:h-auto max-h-screen [&_div.swiper-button-next]:text-background [&_div.swiper-button-prev]:text-background swiper-fade-black-bg"
       >
         {[
           "/slide1.jpg",
