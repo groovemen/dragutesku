@@ -79,7 +79,7 @@ const Navbar: React.FC<Props> = () => {
               <div className="flex flex-shrink-0 items-center">
                 <Image className="h-10 md:h-12 w-auto" width={200} height={100} src="/logo.png" alt="DrgMastering Logo" />
               </div>
-              <div className="hidden sm:ml-12 sm:block">
+              <div className="hidden sm:ml-12 flex items-center">
                 <div className="flex space-x-4">
                   <Link
                     href="#studio"
