@@ -190,6 +190,13 @@ const Navbar: React.FC<Props> = () => {
                 References
               </Link>
               <Link
+                href="#order"
+                className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit text-gray-300 hover:text-white hover:font-semibold rounded-none hover:text-white"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Order
+              </Link>
+              <Link
                 href="#contact"
                 className="rounded-md px-3 py-2 text-base uppercase font-medium w-fit text-gray-300 hover:text-white hover:font-semibold rounded-none hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}

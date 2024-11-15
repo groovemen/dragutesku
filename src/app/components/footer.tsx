@@ -38,12 +38,13 @@ export default function Footer() {
       {/* <div className="absolute inset-0 h-full flex items-center justify-center bg-[#000]/30"></div> */}
       <div className="relative mx-auto w-full md:max-w-7xl 2xl:max-w-[100rem] px-8 md:px-0 z-30 pt-12">
         <div className="relative max-w-[50rem] mx-auto text-center p-12 border border-white/30 rounded-xl">
-          <div className="absolute inset-0 w-full h-full bg-[#fff]/30 blur-sm"></div>
+          <div className="absolute inset-0 w-full h-full bg-[#000]/70 blur-sm"></div>
           <div className="relative z-50">
             <div className="flex flex-col items-center justify-center">
-              <div className="flex items-center gap-4 mb-4">
-                <Typography className="uppercase text-white" type="h2">Contact</Typography>
-              </div>
+              <h2 className="uppercase flex text-white text-3xl md:text-4xl text-black font-bold items-center -ml-14 mb-8">
+                <Image className="w-16 mr-4" src="/sound-vector.svg" width={200} height={100} alt="soundwave" />
+                Contact
+              </h2>
               <a href="mailto:drgmastering@gmail.com">
                 <Typography className="flex gap-2 my-4 underline uppercase text-white">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +71,7 @@ export default function Footer() {
                 </Typography>
               </div>
             </div>
-            <div className="flex gap-8 sm:justify-center">
+            <div className="flex gap-8 align-center justify-center">
               <IconButton
                 as="a"
                 href="https://wa.me/+40761423156?text=I'm%20interested%20in%20your%20services"
@@ -116,8 +117,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-10 text-white flex md:items-center md:justify-center border-t border-surface py-8">
-          © 2024 DRGMASTERING&nbsp; •&nbsp; <a href="#">PRIVACY POLICY</a>&nbsp; / &nbsp;<a href="#">TERMS & CONDITIONS</a>
+        <div className="mt-10 text-white md:flex md:items-center md:justify-center border-t border-surface pt-10 pb-10 sm:pb-0 mx-auto text-center">
+          <p>© 2024 DRGMASTERING&nbsp; •&nbsp;</p>
+          <p>
+            <a href="#">PRIVACY POLICY</a>&nbsp; / &nbsp;<a href="#">TERMS & CONDITIONS</a>
+          </p>
         </div>
       </div>
     </footer>
