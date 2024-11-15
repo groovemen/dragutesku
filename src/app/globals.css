@@ -23,3 +23,12 @@ body {
   background: var(--background);
   font-family: Lato, sans-serif;
 }
+
+.swiper-fade-black-bg .swiper-wrapper {
+  background-color: black !important;  /* Black background */
+}
+
+.swiper-fade-black-bg .swiper-slide {
+  transition: opacity 0.5s ease-in-out;
+  background-color: black !important;  /* Ensure slide background is also black */
+}
