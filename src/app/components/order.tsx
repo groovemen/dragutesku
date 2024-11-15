@@ -31,6 +31,8 @@ const Order = () => {
     },
   });
 
+  const [isRadioSelected, setIsRadioSelected] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value, type } = e.target;
   
@@ -43,6 +45,10 @@ const Order = () => {
       }));
     } else {
       setFormData(prev => ({ ...prev, [id]: value }));
+    }
+
+    if (id === "radio-link-agree") {
+      setIsRadioSelected(e.target.checked);
     }
   };
   
@@ -63,6 +69,12 @@ const Order = () => {
 
       if (missingFields.length > 0) {
         window.alert(`Please fill in the following required fields: ${missingFields.join(', ')}`);
+        return;
+      }
+
+      // Check if the radio button is selected
+      if (!isRadioSelected) {
+        window.alert("Please consent to the terms before submitting the form.");
         return;
       }
   
@@ -317,14 +329,14 @@ const Order = () => {
                 onChange={handleChange}
               />
               <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-                {["digitalMastering", "stemMastering", "djMix", "mixdown", "vinylMastering", "mixdownMastering", "audioRestoration"]
+                {["digitalMastering", "vinylMastering", "stemMastering", "mixdown", "mixdownMastering", "audioRestoration", "djMix/Podcast"]
                   .map((option: string | null | undefined) => option ? (
                     <div key={option} className="flex items-center gap-2">
                       <Checkbox color="secondary" id={option} onChange={handleChange}>
                         <Checkbox.Indicator />
                       </Checkbox>
                       <Typography className="capitalize text-white" as="label" htmlFor={option}>
-                        {option}
+                        {option.replace(/([a-z])([A-Z])/g, '$1 $2')}
                       </Typography>
                     </div>
                   ) : null)}
@@ -332,7 +344,7 @@ const Order = () => {
               <hr className="mt-6" />
               <Radio color="secondary">
                 <div className="flex items-center gap-2">
-                  <Radio.Item id="radio-link-agree">
+                  <Radio.Item id="radio-link-agree" onChange={handleChange}>
                     <Radio.Indicator />
                   </Radio.Item>
                   <Typography
