@@ -16,10 +16,10 @@ const ParallaxBottom = (props: Props) => {
 
   return (
     <div
-      className="relative h-[10rem] md:h-[33rem] w-full bg-cover bg-top"
+      className="relative h-[10rem] md:h-[33rem] 2xl:h-[50rem] w-full bg-cover bg-top"
       style={{
         backgroundImage: "url('/tools.png')",
-        backgroundPositionY: offsetY * 0.3,
+        backgroundPositionY: offsetY * 0.35,
       }}
     >
       <div className="absolute inset-0 flex items-center justify-center bg-[#000] bg-opacity-40"></div>
