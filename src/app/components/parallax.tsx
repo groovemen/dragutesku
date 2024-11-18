@@ -19,7 +19,7 @@ const Parallax = (props: Props) => {
       className="relative h-[10rem] md:h-[33rem] 2xl:h-[50rem] w-full bg-cover"
       style={{
         backgroundImage: "url('/mixer-lung.png')",
-        backgroundPositionY: offsetY * 0.3,
+        backgroundPositionY: offsetY * 0.5,
       }}
     >
       <div className="absolute inset-0 flex items-center justify-center bg-[#000] bg-opacity-40"></div>
