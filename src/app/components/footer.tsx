@@ -37,7 +37,7 @@ export default function Footer() {
       <div className="absolute w-full h-full bg-[url('/mixer.jpg')] bg-bottom bg-cover blur-sm"></div>
       {/* <div className="absolute inset-0 h-full flex items-center justify-center bg-[#000]/30"></div> */}
       <div className="relative mx-auto w-full md:max-w-7xl 2xl:max-w-[100rem] px-8 md:px-0 z-30 pt-12">
-        <div className="relative max-w-[50rem] mx-auto text-center p-12 border border-white/30 rounded-xl">
+        <div className="relative max-w-[70%] mx-auto text-center p-12 border border-white/30 rounded-xl">
           <div className="absolute inset-0 w-full h-full bg-[#000]/70 blur-sm"></div>
           <div className="relative z-50">
             <div className="flex flex-col items-center justify-center">
@@ -117,8 +117,8 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 text-white md:flex md:items-center md:justify-center border-t border-surface pt-10 pb-10 sm:pb-0 mx-auto text-center">
-          <p>© 2024 DRGMASTERING&nbsp; •&nbsp;</p>
-          <p>
+          <p className="text-xs">© 2024 DRGMASTERING&nbsp; •&nbsp;</p>
+          <p className="text-xs">
             <a className="hover:underline" target="_blank" href="/privacy-policy">PRIVACY POLICY</a>
             &nbsp; / &nbsp;
             <a className="hover:underline" target="_blank" href="/terms-conditions">TERMS & CONDITIONS</a>
