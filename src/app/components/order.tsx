@@ -345,7 +345,7 @@ const Order = () => {
                 onChange={handleChange}
               />
               <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-                {["digitalMastering", "vinylMastering", "stemMastering", "mixdown", "mixdownMastering", "audioRestoration", "djMix/Podcast"]
+                {["digitalMastering", "vinylMastering", "stemMastering", "mixdown", "mixdown/Mastering", "audioRestoration", "djMix/Podcast"]
                   .map((option: string | null | undefined) => option ? (
                     <div key={option} className="flex items-center gap-2">
                       <Checkbox color="secondary" id={option} onChange={handleChange}>
@@ -371,9 +371,9 @@ const Order = () => {
                     I consent to having
                     <Typography
                       as="a"
-                      href="#"
+                      href="/terms-conditions"
                       color="secondary"
-                      className="px-2"
+                      className="px-2 underline"
                     >
                       DRG MASTERING
                     </Typography>
