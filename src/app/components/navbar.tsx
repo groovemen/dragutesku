@@ -80,7 +80,7 @@ const Navbar: React.FC<Props> = () => {
                 <Image className="h-10 md:h-12 w-auto" width={200} height={100} src="/logo.png" alt="DrgMastering Logo" />
               </div>
               <div className="hidden sm:ml-12 sm:block my-auto">
-                <div className="flex space-x-4">
+                <div className="flex space-x-2 lg:space-x-4">
                   <Link
                     href="#studio"
                     className="px-3 py-2 text-base uppercase font-medium text-gray-300 hover:border-b hover:text-white hover:font-semibold transition-colors duration-200 ease-out hover:ease-in"
@@ -116,7 +116,7 @@ const Navbar: React.FC<Props> = () => {
               </div>
             </div>
             <div className="absolute inset-y-0 gap-3 !right-10 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <div className="flex gap-4 md:gap-8 sm:justify-center mr-4">
+              <div className="flex gap-2 md:gap-4 lg:gap-8 sm:justify-center mr-4">
                 <IconButton
                   as="a"
                   href="https://wa.me/+40761423156?text=I'm%20interested%20in%20your%20services"
