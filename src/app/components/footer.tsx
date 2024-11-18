@@ -34,8 +34,7 @@ const YEAR = new Date().getFullYear();
 export default function Footer() {
   return (
     <footer id="contact" className="relative w-full sm:py-8">
-      <div className="absolute w-full h-full bg-[url('/mixer.jpg')] bg-bottom bg-cover blur-sm"></div>
-      {/* <div className="absolute inset-0 h-full flex items-center justify-center bg-[#000]/30"></div> */}
+      <div className="absolute w-full h-full bg-[url('/mixer.jpg')] bg-bottom bg-cover blur-[2px]"></div>
       <div className="relative mx-auto w-full md:max-w-7xl 2xl:max-w-[100rem] px-8 md:px-0 z-30 pt-12">
         <div className="relative md:max-w-[70%] mx-auto text-center p-12 border border-white/30 rounded-xl">
           <div className="absolute inset-0 w-full h-full bg-[#000]/70 blur-sm"></div>
