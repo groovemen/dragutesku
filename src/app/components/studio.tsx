@@ -22,7 +22,7 @@ const Studio = (props: Props) => {
                 alt="Mastering Room"
               />
             <div className="md:m-auto">
-              <h3 className="text-2xl uppercase text-black font-bold mt-8 sm:mt-0 mb-4">Mastering Room</h3>
+              <h3 className="text-2xl uppercase text-black font-bold mt-8 md:mt-0 mb-4">Mastering Room</h3>
               <h5 className="text-base text-black mb-1">„Front to Back & Above” Acoustic</h5>
               <h5 className="text-base text-black mb-1">Treatment + Bass Traps</h5>
               <h5 className="text-base text-black mb-1">Neumann KH310 Monitoring</h5>
@@ -36,7 +36,7 @@ const Studio = (props: Props) => {
           </div>
           <div className="flex flex-col mt-24 md:flex-row md:space-x-8">
             <div className="order-2 md:order-1 lg:ml-24 lg:mr-40">
-              <h3 className="text-2xl uppercase text-black font-bold mt-8 sm:mt-0 mb-4">Daw System & Plugins</h3>
+              <h3 className="text-2xl uppercase text-black font-bold mt-8 md:mt-0 mb-4">Daw System & Plugins</h3>
               <h5 className="text-base text-black mb-1">Ableton Live 11</h5>
               <h5 className="text-base text-black mb-1">Mac Studio M1 with OSX</h5>
               <h5 className="text-base text-black mb-1">Universal Audio Apollo Interfaces</h5>
