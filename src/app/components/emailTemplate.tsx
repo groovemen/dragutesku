@@ -31,7 +31,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
     <p><strong>Company:</strong> {company}</p>
     <p><strong>Full Name:</strong> {fullname}</p>
     <p><strong>Email:</strong> {email}</p>
-    <p><strong>VAT ID:</strong> {vat}</p>
+    {vat && <p><strong>VAT ID:</strong> {vat}</p>}
     <p><strong>Address:</strong> {address}</p>
     <p><strong>City:</strong> {city}</p>
     <p><strong>Postal Code:</strong> {postalcode}</p>
