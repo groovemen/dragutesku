@@ -105,10 +105,10 @@ export default function Footer() {
               </IconButton>
             </div>
               <div className="mt-12">
-                <Typography type="p" className="text-center">
+                <Typography type="p" className="text-center text-white">
                   Music Mix Masters SRL
                 </Typography>
-                <Typography type="p" className="text-center">
+                <Typography type="p" className="text-center text-white">
                   CUI 42820820 | VAT ID: RO47403670
                 </Typography>
               </div>
@@ -116,8 +116,8 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 text-white md:flex md:items-center md:justify-center border-t border-surface pt-10 pb-10 sm:pb-0 mx-auto text-center">
-          <p className="text-xs">© 2024 DRGMASTERING&nbsp; •&nbsp;</p>
-          <p className="text-xs">
+          <p className="text-xs text-white">© 2024 DRGMASTERING&nbsp; •&nbsp;</p>
+          <p className="text-xs text-white">
             <a className="hover:underline" target="_blank" href="/privacy-policy">PRIVACY POLICY</a>
             &nbsp; / &nbsp;
             <a className="hover:underline" target="_blank" href="/terms-conditions">TERMS & CONDITIONS</a>
