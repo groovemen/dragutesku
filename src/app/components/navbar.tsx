@@ -31,9 +31,9 @@ const Navbar: React.FC<Props> = () => {
           isScrolled ? "bg-[#000]" : "bg-[#000] bg-opacity-30 backdrop-filter backdrop-blur-lg"
         } fixed top-0 w-full z-50 transition-colors duration-300`}
       >
-        <div className="mx-auto md:max-w-7xl 2xl:max-w-[100rem] sm:py-2 px-4 sm:px-0">
+        <div className="mx-auto md:max-w-7xl 2xl:max-w-[100rem] sm:py-2 px-4 md:px-0">
           <div className="relative flex h-16 items-center justify-between">
-            <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+            <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
               <button
                 type="button"
                 onClick={toggleMobileMenu}
@@ -79,7 +79,7 @@ const Navbar: React.FC<Props> = () => {
               <div className="flex flex-shrink-0 items-center">
                 <Image className="h-10 md:h-12 w-auto" width={200} height={100} src="/logo.png" alt="DrgMastering Logo" />
               </div>
-              <div className="hidden sm:ml-12 sm:block my-auto">
+              <div className="hidden sm:ml-12 md:block my-auto">
                 <div className="flex space-x-2 lg:space-x-4">
                   <Link
                     href="#studio"
@@ -115,7 +115,7 @@ const Navbar: React.FC<Props> = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute inset-y-0 gap-3 !right-10 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div className="absolute inset-y-0 gap-3 !right-10 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
               <div className="flex gap-2 md:gap-4 lg:gap-8 sm:justify-center mr-4">
                 <IconButton
                   as="a"
