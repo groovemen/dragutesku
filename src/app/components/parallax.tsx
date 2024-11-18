@@ -16,7 +16,7 @@ const Parallax = (props: Props) => {
 
   return (
     <div
-      className="relative h-[10rem] md:h-[33rem] w-full bg-cover"
+      className="relative h-[10rem] md:h-[33rem] 2xl:h-[50rem] w-full bg-cover"
       style={{
         backgroundImage: "url('/mixer-lung.png')",
         backgroundPositionY: offsetY * 0.3,
