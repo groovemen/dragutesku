@@ -14,27 +14,8 @@ const Studio = (props: Props) => {
         </h2>
         <div className="mt-12">
           <div className="block md:flex">
-            {/* <div className="relative">
-              <Image
-                className="opacity-40 z-10 border border-white/40 rounded-xl w-[31.25rem] h-[25rem]"
-                src="/studio-1.png"
-                width={500}
-                height={700}
-                alt="Mastering Room"
-              />
-              <Image
-                className="absolute left-5 top-6 opacity-100 z-20 flex items-center border border-white/60 rounded-lg h-[22rem]"
-                src="/eq.png"
-                width={460}
-                height={760}
-                alt="Mastering Room"
-              />
-              <Typography className="absolute text-white text-sm -mt-16 ml-32 uppercase z-30">
-                Flat EQ Room in the Sweet Spot
-              </Typography>
-            </div> */}
             <Image
-                className="z-10 rounded-xl w-[35rem]"
+                className="z-10 rounded-xl lg:w-[35rem]"
                 src="/studio-1.png"
                 width={500}
                 height={700}
@@ -54,7 +35,7 @@ const Studio = (props: Props) => {
             </div>
           </div>
           <div className="flex flex-col mt-24 md:flex-row md:space-x-8">
-            <div className="order-2 md:order-1 md:ml-24 md:mr-40">
+            <div className="order-2 md:order-1 lg:ml-24 lg:mr-40">
               <h3 className="text-2xl uppercase text-black font-bold mt-8 sm:mt-0 mb-4">Daw System & Plugins</h3>
               <h5 className="text-base text-black mb-1">Ableton Live 11</h5>
               <h5 className="text-base text-black mb-1">Mac Studio M1 with OSX</h5>

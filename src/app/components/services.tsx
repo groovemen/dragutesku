@@ -16,7 +16,7 @@ const Services = (props: Props) => {
       </div>
       <div className="bg-[url('/vinyl.jpg')] bg-no-repeat bg-cover px-8 md:px-0">
         <div className="container w-full mx-auto py-12">
-          <div className="grid md:!grid-cols-2 gap-24">
+          <div className="grid lg:!grid-cols-2 gap-24">
             <div className="grid grid-cols-1 md:!grid-cols-2 gap-8">
               <div className="flex items-center gap-4">
                 <div className="w-28 h-28 border border-white rounded-full flex items-center justify-center">
@@ -55,7 +55,7 @@ const Services = (props: Props) => {
                 <h6 className="uppercase text-white font-normal">DJ Mix & Podcast</h6>
               </div>
             </div>
-            <div className="md:pr-32 md:pl-12">
+            <div className="md:pr-32 lg:pl-12">
               <Typography type="h4" className="text-2xl text-white font-bold my-8">Elevate Your Sound to Perfection</Typography>
               <Typography className="text-white opacity-90 mb-6">Over 1000+ projects for labels and producers worldwide, crafted with over 12+ years of experience.</Typography>
               <Typography className="text-white opacity-90 mb-12">Are you prepared to captivate your audience with industry-level quality, clarity, and balance in every beat?</Typography>

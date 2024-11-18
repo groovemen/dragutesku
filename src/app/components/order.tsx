@@ -159,7 +159,7 @@ const Order = () => {
             To request a quote or discuss a project, please fill out the form
             below.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="grid gap-4 mt-12">
               <div className="flex gap-4">
                 <div className="w-full space-y-1">
@@ -403,7 +403,7 @@ const Order = () => {
               </Button>
             </div>
             
-            <div className="px-12 hidden md:block">
+            <div className="px-12 hidden lg:block">
               <div className="relative mb-24 md:mt-10">
                 <Image
                   className="absolute opacity-30 m-4 z-10 border border-white/40 rounded-xl h-[35rem]"
