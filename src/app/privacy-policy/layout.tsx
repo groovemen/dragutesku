@@ -11,7 +11,6 @@ export default function PolicyLayout({
       <>
         <NavbarTerms />
         {children}
-        <Footer />
       </>
 
   );
