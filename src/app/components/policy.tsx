@@ -88,7 +88,7 @@ const PrivacyPolicy = (props: Props) => {
                 <strong className="text-white">Third-Party Service:</strong> refers to advertisers, contest sponsors, promotional and marketing partners, and others who provide our content or whose products or services we think may interest you.
               </li>
               <li className="mb-2">
-                <strong className="text-white">Website:</strong>drgmastering's site, which can be accessed via this URL:{" "}
+                <strong className="text-white">Website:</strong>drgmastering&apos;s site, which can be accessed via this URL:{" "}
                 <a
                   href="https://www.drgmastering.com/"
                   target="_blank"
@@ -214,7 +214,7 @@ const PrivacyPolicy = (props: Props) => {
               How Long Do We Keep Your Information?
             </Typography>
             <Typography variant="p">
-              We keep your information only so long as we need it to provide drgmastering to you and fulfill the purposes described in this policy. This is also the case for anyone that we share your information with and who carries out services on our behalf. When we no longer need to use your information and there is no need for us to keep it to comply with our legal or regulatory obligations, we’ll either remove it from our systems or depersonalize it so that we can't identify you.
+              We keep your information only so long as we need it to provide drgmastering to you and fulfill the purposes described in this policy. This is also the case for anyone that we share your information with and who carries out services on our behalf. When we no longer need to use your information and there is no need for us to keep it to comply with our legal or regulatory obligations, we’ll either remove it from our systems or depersonalize it so that we can&apos;t identify you.
             </Typography>
           </section>
           
@@ -296,7 +296,7 @@ const PrivacyPolicy = (props: Props) => {
               Your Consent
             </Typography>
             <Typography variant="p">
-              We've updated our Privacy Policy to provide you with complete transparency into what is being set when you visit our site and how it's being used. By using our website, registering an account, or making a purchase, you hereby consent to our Privacy Policy and agree to its terms.
+              We&apos;ve updated our Privacy Policy to provide you with complete transparency into what is being set when you visit our site and how it&apos;s being used. By using our website, registering an account, or making a purchase, you hereby consent to our Privacy Policy and agree to its terms.
             </Typography>
           </section>
           
@@ -323,7 +323,7 @@ const PrivacyPolicy = (props: Props) => {
               Blocking and disabling cookies and similar technologies
             </Typography>
             <Typography variant="p">
-              Wherever you're located you may also set your browser to block cookies and similar technologies, but this action may block our essential cookies and prevent our website from functioning properly, and you may not be able to fully utilize all of its features and services. You should also be aware that you may also lose some saved information (e.g. saved login details, site preferences) if you block cookies on your browser. Different browsers make different controls available to you. Disabling a cookie or category of cookie does not delete the cookie from your browser, you will need to do this yourself from within your browser, you should visit your browser's help menu for more information.
+              Wherever you&apos;re located you may also set your browser to block cookies and similar technologies, but this action may block our essential cookies and prevent our website from functioning properly, and you may not be able to fully utilize all of its features and services. You should also be aware that you may also lose some saved information (e.g. saved login details, site preferences) if you block cookies on your browser. Different browsers make different controls available to you. Disabling a cookie or category of cookie does not delete the cookie from your browser, you will need to do this yourself from within your browser, you should visit your browser&apos;s help menu for more information.
             </Typography>
           </section>
           
@@ -332,13 +332,13 @@ const PrivacyPolicy = (props: Props) => {
               Remarketing Services
             </Typography>
             <Typography variant="p">
-              We use remarketing services. What Is Remarketing? In digital marketing, remarketing (or retargeting) is the practice of serving ads across the internet to people who have already visited your website. It allows your company to seem like they're “following” people around the internet by serving ads on the websites and platforms they use most.
+              We use remarketing services. What Is Remarketing? In digital marketing, remarketing (or retargeting) is the practice of serving ads across the internet to people who have already visited your website. It allows your company to seem like they&apos;re “following” people around the internet by serving ads on the websites and platforms they use most.
             </Typography>
           </section>
           
           <section className="mt-8">
             <Typography variant="h4" className="text-white font-bold text-2xl mb-4">
-              Kids' Privacy
+              Kids&apos; Privacy
             </Typography>
             <Typography variant="p">
               We do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.
@@ -363,7 +363,7 @@ const PrivacyPolicy = (props: Props) => {
               <br/><br/>
               You acknowledge and agree that drgmastering shall not be responsible for any Third-Party Services, including their accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect thereof. drgmastering does not assume and shall not have any liability or responsibility to you or any other person or entity for any Third-Party Services.
               <br/><br/>
-              Third-Party Services and links thereto are provided solely as a convenience to you and you access and use them entirely at your own risk and subject to such third parties' terms and conditions.
+              Third-Party Services and links thereto are provided solely as a convenience to you and you access and use them entirely at your own risk and subject to such third parties&apos; terms and conditions.
             </Typography>
           </section>
 
@@ -390,7 +390,7 @@ const PrivacyPolicy = (props: Props) => {
               What is GDPR?
             </Typography>
             <Typography variant="p">
-              GDPR is an EU-wide privacy and data protection law that regulates how EU residents' data is protected by companies and enhances the control the EU residents have, over their personal data.
+              GDPR is an EU-wide privacy and data protection law that regulates how EU residents&apos; data is protected by companies and enhances the control the EU residents have, over their personal data.
               <br/><br/>
               The GDPR is relevant to any globally operating company and not just the EU-based businesses and EU residents. Our customers’ data is important irrespective of where they are located, which is why we have implemented GDPR controls as our baseline standard for all our operations worldwide.
             </Typography>
@@ -425,18 +425,18 @@ const PrivacyPolicy = (props: Props) => {
               Why is GDPR important?
             </Typography>
             <Typography variant="p">
-              GDPR adds some new requirements regarding how companies should protect individuals' personal data that they collect and process. It also raises the stakes for compliance by increasing enforcement and imposing greater fines for breach. Beyond these facts it's simply the right thing to do. At drgmastering we strongly believe that your data privacy is very important and we already have solid security and privacy practices in place that go beyond the requirements of this new regulation.
+              GDPR adds some new requirements regarding how companies should protect individuals&apos; personal data that they collect and process. It also raises the stakes for compliance by increasing enforcement and imposing greater fines for breach. Beyond these facts it&apos;s simply the right thing to do. At drgmastering we strongly believe that your data privacy is very important and we already have solid security and privacy practices in place that go beyond the requirements of this new regulation.
             </Typography>
           </section>
           
           <section className="mt-8">
             <Typography variant="h4" className="text-white font-bold text-2xl mb-4">
-              Individual Data Subject's Rights - Data Access, Portability and Deletion
+              Individual Data Subject&apos;s Rights - Data Access, Portability and Deletion
             </Typography>
             <Typography variant="p">
               We are committed to helping our customers meet the data subject rights requirements of GDPR. drgmastering processes or stores all personal data in fully vetted, DPA compliant vendors. We do store all conversation and personal data for up to 6 years unless your account is deleted. In which case, we dispose of all data in accordance with our Terms of Service and Privacy Policy, but we will not hold it longer than 60 days.
               <br/><br/>
-              We are aware that if you are working with EU customers, you need to be able to provide them with the ability to access, update, retrieve and remove personal data. We got you! We've been set up as self service from the start and have always given you access to your data and your customers data. Our customer support team is here for you to answer any questions you might have about working with the API.
+              We are aware that if you are working with EU customers, you need to be able to provide them with the ability to access, update, retrieve and remove personal data. We got you! We&apos;ve been set up as self service from the start and have always given you access to your data and your customers data. Our customer support team is here for you to answer any questions you might have about working with the API.
             </Typography>
           </section>
           
@@ -460,7 +460,7 @@ const PrivacyPolicy = (props: Props) => {
                 Right to Delete. You may submit a verifiable request to close your account and we will delete Personal Information about you that we have collected.
               </li>
               <li className="mb-2">
-                Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
+                Request that a business that sells a consumer&apos;s personal data, not sell the consumer&apos;s personal data.
               </li>
             </ul>
             <Typography variant="p">
@@ -478,7 +478,7 @@ const PrivacyPolicy = (props: Props) => {
               Contact Us
             </Typography>
             <Typography variant="p">
-              Don't hesitate to contact us if you have any questions.
+              Don&apos;t hesitate to contact us if you have any questions.
             </Typography>
             <ul className="list-disc pl-5">
               <li className="mb-2">
