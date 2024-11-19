@@ -2,38 +2,9 @@
 import { Typography, IconButton } from "@material-tailwind/react";
 import Image from "next/image";
 
-const LINKS = [
-  {
-    items: [
-      {
-        title: "HOME",
-        href: "/#home"
-      },
-      {
-        title: "STUDIO",
-        href: "/#studio"
-      },
-      {
-        title: "REFERENCES",
-        href: "/#references"
-      },
-      {
-        title: "SERVICES",
-        href: "/#services"
-      },
-      {
-        title: "ORDER",
-        href: "/#order"
-      }
-    ],
-  },
-];
-
-const YEAR = new Date().getFullYear();
-
 export default function Footer() {
   return (
-    <footer id="contact" className="relative w-full sm:py-8">
+    <footer id="contact" className="relative w-full sm:py-4">
       <div className="absolute w-full h-full bg-[url('/mixer.jpg')] bg-bottom bg-cover blur-[2px]"></div>
       <div className="relative mx-auto w-full md:max-w-7xl 2xl:max-w-[100rem] px-8 md:px-0 z-30 pt-12">
         <div className="relative md:max-w-[70%] mx-auto text-center p-12 border border-white/30 rounded-xl">
