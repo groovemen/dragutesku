@@ -81,7 +81,10 @@ const Order = () => {
   
       // Validate required fields
       const requiredFields = ['company', 'fullname', 'email', 'address', 'city', 'postalcode', 'country'];
-      const missingFields = requiredFields.filter(field => !formData[field as keyof typeof formData]);
+      const missingFields = requiredFields.filter(field => 
+        !formData[field as keyof typeof formData] || 
+        formData[field as keyof typeof formData].trim() === ''
+      );
 
       if (missingFields.length > 0) {
         window.alert(`Please fill in the following required fields: ${missingFields.join(', ')}`);
