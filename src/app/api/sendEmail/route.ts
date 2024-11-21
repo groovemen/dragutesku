@@ -5,7 +5,7 @@ import { EmailTemplate } from '@/app/components/emailTemplate';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
-  if (!process.env.RESENDUAPI_KEY) {
+  if (!process.env.RESEND_API_KEY) {
     return NextResponse.json(
       { error: 'Resend API key is missing' },
       { status: 500 }
