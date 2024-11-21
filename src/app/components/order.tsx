@@ -71,46 +71,24 @@ const Order = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   
+    // Prepare data for submission - explicitly include selected options
+    const selectedOptions = Object.entries(formData.options)
+      .filter(([, value]) => value)
+      .reduce((acc, [key, value]) => ({ ...acc, [key]: value }), {});
+  
+    const submissionData = {
+      ...formData,
+      ...selectedOptions
+    };
+  
     try {
-      // Validate email format
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailPattern.test(formData.email)) {
-        window.alert("Please enter a valid email address.");
-        return;
-      }
-  
-      // Validate required fields
-      const requiredFields = ['company', 'fullname', 'email', 'address', 'city', 'postalcode', 'country'];
-      const missingFields = requiredFields.filter(field => 
-        !formData[field as keyof typeof formData] || 
-        formData[field as keyof typeof formData].trim() === ''
-      );
-
-      if (missingFields.length > 0) {
-        window.alert(`Please fill in the following required fields: ${missingFields.join(', ')}`);
-        return;
-      }
-
-      // Check if the radio button is selected
-      if (!isRadioSelected) {
-        window.alert("Please consent to the terms before submitting the form.");
-        return;
-      }
-  
-      // Prepare data for submission
-      const { options, ...flattenedFormData } = {
-        ...formData,
-        ...formData.options,
-      };
-  
-      // Send request
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        body: JSON.stringify(flattenedFormData),
+        body: JSON.stringify(submissionData),
       });
   
       const result = await response.json();
@@ -119,30 +97,8 @@ const Order = () => {
         throw new Error(result.error || 'Failed to send email');
       }
   
-      // Success handling
+      // Success handling remains the same
       window.alert('Email sent successfully!');
-      
-      // Reset form
-      setFormData({
-        company: '',
-        fullname: '',
-        email: '',
-        vat: '',
-        address: '',
-        city: '',
-        postalcode: '',
-        country: '',
-        projectinfo: '',
-        options: {
-          digitalMastering: false,
-          stemMastering: false,
-          djMix: false,
-          mixdown: false,
-          vinylMastering: false,
-          mixdownMastering: false,
-          audioRestoration: false,
-        },
-      });
     } catch (error) {
       console.error('Error sending email:', error);
       window.alert(error instanceof Error ? error.message : 'Failed to send email. Please try again.');
